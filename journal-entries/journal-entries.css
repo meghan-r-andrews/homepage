@@ -1,0 +1,25 @@
+body {
+    background-color:cornflowerblue;
+}
+
+summary {
+    color:white;
+    font-family: "DM Sans";
+    font-size: 30px;
+}
+
+p {
+    color:rgb(16, 16, 75);
+    font-family: "DM Sans";
+    font-size: 17px;
+}
+
+a {
+    font-family: "DM Sans";
+    color:rgb(243, 196, 121);
+    font-size: 18px;
+}
+
+a:visited {
+    color:blueviolet;
+}
