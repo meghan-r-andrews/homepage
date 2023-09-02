@@ -2,6 +2,14 @@ body {
     background-color:cornflowerblue;
 }
 
+h1 {
+color:rgb(254, 211, 154);
+font-family: "Kumar One";
+font-size: 50px;
+text-align: center;
+text-decoration:underline;
+}
+
 summary {
     color:white;
     font-family: "DM Sans";
@@ -16,7 +24,7 @@ p {
 
 a {
     font-family: "DM Sans";
-    color:rgb(243, 196, 121);
+    color:aquamarine;
     font-size: 18px;
 }
 
