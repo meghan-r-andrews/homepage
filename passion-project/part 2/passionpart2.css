@@ -36,6 +36,7 @@ p {
 font-family: "Poppins";
 font-size: 16px;
 color:rgb(47, 31, 47);
+margin-bottom: 30px;
 }
 
 a{
@@ -50,6 +51,7 @@ figcaption {
 font-family: "Poppins";
 font-style: italic;
 color:rgb(47, 31, 47);
+margin-top: 10px;
 }
 
 figure {
@@ -82,8 +84,7 @@ hr {
     border-style:solid;
     border-color: rgb(47, 68, 68);
     padding: 20px;
-    margin-left: 400px;
-    margin-right: 400px;
+    margin: 30px 400px 30px 400px;
     font-size: 30px;
     border-radius: 10px;
 }
