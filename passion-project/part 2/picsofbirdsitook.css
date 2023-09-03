@@ -8,13 +8,7 @@ h1 {
     text-align: center;
     font-size: 45px;
     color:rgb(47, 68, 68);
-    background-color: antiquewhite;
-    border: 4px;
-    border-style:solid;
-    border-color: rgb(47, 68, 68);
-    border-radius: 10px;
-    padding: 35px 0 35px 0;
-    margin: 40px 200px 40px 200px;
+    margin-bottom: 0;
 }
 
 h2{
@@ -85,7 +79,6 @@ hr {
     margin-left: 400px;
     margin-right: 400px;
     font-size: 30px;
-    border-radius: 10px;
 }
 
 .reasons {
@@ -104,9 +97,11 @@ hr {
     text-align: center;
     font-size: 45px;
     color:rgb(47, 68, 68);
-    background-color: position antiquewhite;
+    background-color: antiquewhite;
     border: 4px;
     border-style:solid;
     border-color: rgb(47, 68, 68);
-    margin: 40px 100px 40px 100px;
+    margin: 40px 200px 40px 200px;
+    padding-bottom: 15px;
+    border-radius: 10px;
 }
