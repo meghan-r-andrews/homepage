@@ -1,0 +1,59 @@
+body {
+    background-color: thistle;
+}
+
+h1 {
+    font-family: "Gloock";
+    text-align: center;
+    font-size: 45px;
+    color:rgb(67, 97, 97);
+}
+
+h2{
+    font-family: "Gloock";
+    color:rgb(67, 97, 97);
+}
+
+h3 {
+    text-align: center;
+    margin-top: 0;
+    font-size: 22px;
+    color:rgb(67, 97, 97);
+}
+
+
+p {
+font-family: "Poppins";
+font-size: 16px;
+color:rgb(47, 31, 47);
+}
+
+a{
+ font-family: "Poppins";
+}
+
+li {
+font-family: "Poppins";
+}
+
+
+figcaption {
+font-family: "Poppins";
+font-style: italic;
+color:rgb(47, 31, 47);
+}
+
+.cardinalwithbabies {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    border-radius: 50px;
+}
+
+
+
+
+
+
+
