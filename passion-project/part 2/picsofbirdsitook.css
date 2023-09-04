@@ -31,10 +31,16 @@ font-family: "Poppins";
 font-size: 16px;
 color:rgb(47, 31, 47);
 margin-bottom: 35px;
+line-height: 1.6;
 }
 
 a{
  font-family: "Poppins";
+}
+
+a:hover {
+    cursor:crosshair;
+    background-color:antiquewhite;
 }
 
 li {
