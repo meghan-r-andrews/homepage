@@ -29,6 +29,18 @@ a {
     font-size: 18px;
 }
 
+a:hover {
+    cursor:crosshair;
+}
+
 a:visited {
     color:rgb(97, 20, 138);
+}
+
+section {
+    display: inline-block;
+    float: left;
+    color:darkred;
+    font-family: "DM Sans";
+    font-size: 17px;
 }
