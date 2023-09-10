@@ -16,17 +16,36 @@
     text-align: center;
     padding: 40px;
   }
+
+  h2 {
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  }
+
+  h3 {
+    color: rgb(233, 105, 58);
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 60px;
+    font-weight: bold;
+    text-align: center;
+    padding: 40px;
+  }
+
+
+  .center {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    font-weight: bold;
+    position: relative;
+    bottom: 50px;
+
+  }
   
 .leave {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 30px;
-}
-
-.center {
-  text-align: center;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 50px;
-  font-weight: bold;
+    position: relative;
+    top: 5px;
 }
 
 a {
@@ -40,18 +59,30 @@ a: visited: {
 
 .welcome {
   font-size:30px;
-  font-family:'Lucida Sans Regular';
+  font-family:  'Arial Narrow Bold', sans-serif;
   text-align: center;
-  margin-top: 0;
+  position: relative;
+  bottom:79px;
+  background:darkslategray;
+  padding: 15px;
+  margin: 0 250px;
+  border-radius: 70%
 }
 
+.onthiswebpage {
+  position: relative;
+  bottom: 70px;
+  left: 20px;
+  background: rgb(56, 55, 55)
+  
+}
 p {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 19px;
+  color: white;
 }
 
 summary {
-  font-family:'Courier New', Courier, monospace
 
 }
 
@@ -60,9 +91,17 @@ summary {
   padding: 15px;
 }
 
+.backto2 {
+  display: block;
+  padding: 15px;
+}
+
+
 .thisisawebsite {
 margin: 0 40px 0 40px;
 font-size: 60px;
+position: relative;
+bottom: 75px;
 }
 
 .cardinalwithbabies {
@@ -70,11 +109,37 @@ font-size: 60px;
  height: 200px;
 }
 
-h2 {
-  font-family:'Lucida Sans Regular';
-}
-
 li {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 19px;
+}
+
+.seemore {
+ display: block;
+ text-align: center;
+ font-family: arial;
+ font-size: 30px
+}
+
+hr {
+  color:white;
+  border-top: 3px solid;
+}
+
+.yesno2 {
+}
+
+.seeya {
+  background-color: lightpink;
+  display: block;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+figure {
+  display: inline-block;
+}
+
+.infodumplist {
+  text-align: center;
 }
