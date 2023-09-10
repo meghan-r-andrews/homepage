@@ -169,6 +169,7 @@ bottom: 75px;
 }
 
 .cardinalwithbabies {
+  display: block;
 margin-left: auto;
 margin-right: auto;
  width: 500px;
@@ -207,7 +208,7 @@ hr {
 }
 
 .seeya {
-  background-color: lightpink;
+  background-color: rgb(248, 192, 230);
   display: block;
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;
