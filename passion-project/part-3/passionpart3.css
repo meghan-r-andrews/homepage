@@ -95,10 +95,11 @@
       background: rgb(56, 55, 55);
       padding: 20px;
       opacity: 80%;
+      border-radius: 20px;
     }
 
     .onthiswebpage {
-      text-align: center;
+      text-align: left;
       font-size: 19px;
       background: rgb(56, 55, 55);
       padding: 20px;
@@ -126,12 +127,19 @@
       padding-bottom: 20px;
     }
 
+    ul {
+      border-radius: 20px;
+      background: darkslategray;
+      margin: 0 20px 60px 20px;
+      padding: 10px;
+    }
+
     li {
       font-family: Arial;
       font-size: 19px;
       text-align: left;
       padding: 10px;
-      background: darkslategray;
+      /* background: darkslategray; */
       background-size: 100%;
       color: white;
       list-style: inside;
@@ -144,6 +152,7 @@
     padding: 10px;
     margin: 40px 450px;
     border-radius: 80%;
+    min-width: auto;
   }
 
   .honorable, .bodyofwater {
@@ -272,3 +281,16 @@ div.backtotoppage {
   position: relative;
   top: 45px;
 }
+
+.width {
+  max-width: 480px;
+}
+
+.morenarrow {
+  max-width: 330px;
+}
+
+.difficult {
+  max-width: 322px;
+}
+
