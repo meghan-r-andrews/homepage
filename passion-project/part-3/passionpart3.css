@@ -211,13 +211,25 @@
     font-family: Arial;
     font-size: 30px;
     position: relative;
-    top: 5px;
+    bottom: 15px;
+}
+
+.leave2 {
+  display: block;
+  position: relative;
+  bottom: 27px;
+  font-size: 25px;
 }
 
 
 .backto2 {
   display: block;
   padding: 15px;
+}
+
+.no2 {
+  position: relative;
+  bottom: 4px;
 }
 
 div.backtotoppage {
@@ -306,5 +318,10 @@ div.backtotoppage {
 
 .yesno2 {
   line-height: 1.6;
+}
+
+.noindex {
+  position: relative;
+  top: 5px;
 }
 
