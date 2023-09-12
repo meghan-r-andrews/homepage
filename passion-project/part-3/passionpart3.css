@@ -51,31 +51,38 @@
     position: relative;
     bottom: 30px;
     }
+.container {
+  position: relative;
+  text-align: center;
+}
 
   .welcome {
       color: white;
-      font-size:35px;
+      font-size:40px;
       font-family: "Courgette";
       text-align: center;
       padding: 15px;
-      margin: 0 250px;
       background: none;
       opacity: 100%;
+      font-weight: bold;
+      position: relative;
+      top: 165px;
+      z-index: 3;
     }
 
-  .containerwelcome {
-      background:darkslategray;
-      border-radius: 70%;
-    } 
+    
 
   .cardinalwithbabies {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 500px;
-    height: 400px;
+    width: 400px;
+    height: 300px;
     border-radius: 100%;
     text-align: center;
+    position: relative;
+    bottom: 180px;
+    border: 6px solid white;
     }
 
     img {
@@ -104,6 +111,8 @@
       background: rgb(56, 55, 55);
       padding: 20px;
       background-size: 100% 100%;
+      position: relative;
+      bottom: 135px;
     }
     
     .containeronthiswebpage {
@@ -124,7 +133,8 @@
   summary {
       font-weight: bold;
       color: darkslategray;
-      padding-bottom: 20px;
+      padding-bottom: 20px; 
+      cursor: pointer;
     }
 
     ul {
@@ -152,7 +162,6 @@
     padding: 10px;
     margin: 40px 450px;
     border-radius: 80%;
-    min-width: auto;
   }
 
   .honorable, .bodyofwater {
@@ -204,6 +213,7 @@
     position: relative;
     top: 5px;
 }
+
 
 .backto2 {
   display: block;
@@ -279,7 +289,7 @@ div.backtotoppage {
 
 .options {
   position: relative;
-  top: 45px;
+  bottom: 70px;
 }
 
 .width {
@@ -292,5 +302,9 @@ div.backtotoppage {
 
 .difficult {
   max-width: 322px;
+}
+
+.yesno2 {
+  line-height: 1.6;
 }
 
