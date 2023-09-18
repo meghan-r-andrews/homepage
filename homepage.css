@@ -40,21 +40,22 @@ li {
     font-family: "DM Sans";
     font-style: italic;
     list-style: inside;
+    padding-bottom: 5px;
+    margin-left: 0;
 }
 
 
 .work {
-    background-color: rgb(20, 20, 20);
+    background-color: rgba(39, 39, 39, 0.864);
     padding: 20px;
     width: 100%;
 
     display: flex;
     flex-flow: row wrap;
-    justify-content: center;
-    align-content: center;
+    justify-content: flex-start;
     gap: 40px;
 
     position: relative;
     top: 35px;
-    margin-right: 0px;
+    margin-left: 0;
 }
