@@ -1,0 +1,66 @@
+* { 
+box-sizing: border-box;
+}
+
+.key-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    margin: 20px;
+    flex-direction: row;
+
+
+}
+
+.big-keys {
+    background-color: red;
+    border: 1px solid;
+    width: 100%;
+    height: 100%
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.big {
+    background-color: white;
+    border: 1px solid;
+    width: 280px;
+    height: 500px;
+    padding: 15px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.lyrics-container {
+    background-color: lightblue;
+    border: 1px solid;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+
+}
+
+.lyrics {
+    border: 1px solid;
+    width: 100%;
+    padding: 15px;
+}
+
+.description-container {
+    background-color: lightblue;
+    border: 1px solid;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+.description {
+    border: 1px solid;
+    width: 100%;
+    padding: 15px;
+}
