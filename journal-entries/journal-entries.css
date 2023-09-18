@@ -44,3 +44,12 @@ section {
     font-family: "DM Sans";
     font-size: 17px;
 }
+
+.images {
+    display: flex;
+    justify-content: space-around;
+}
+
+img {
+    border: 2px solid;
+}
