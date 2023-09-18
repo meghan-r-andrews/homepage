@@ -2,14 +2,17 @@
 box-sizing: border-box;
 }
 
+body {
+    background-color:rgb(230, 244, 230);
+}
+
 .key-container {
     width: 100%;
     height: 100%;
     display: flex;
     margin: 20px;
     flex-direction: row;
-
-
+    border: 1px solid;
 }
 
 .big-keys {
@@ -36,31 +39,18 @@ box-sizing: border-box;
     background-color: lightblue;
     border: 1px solid;
     width: 100%;
+    height: 100%;
+    margin: 0 20px;
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
-    margin: 20px;
-
+    flex-direction: row;
 }
 
 .lyrics {
     border: 1px solid;
-    width: 100%;
     padding: 15px;
+
 }
 
-.description-container {
-    background-color: lightblue;
-    border: 1px solid;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    margin: 20px;
-}
 
-.description {
-    border: 1px solid;
-    width: 100%;
-    padding: 15px;
-}
