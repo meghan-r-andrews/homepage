@@ -59,13 +59,20 @@ body {
     background-color:light-blue; 
     padding: 15px;
     font-size: 18px;
+    font-family: Georgia;
     width: 280px;
     flex-shrink: 0;
+    line-height: 1.5;
 }
 
 .lyrics:hover {
-    background-color: rgb(250, 180, 154);
+    background-color: rgb(247, 236, 171);
 }
 
+summary {
+font-weight: bold;
+}
 
+details {
 
+}
