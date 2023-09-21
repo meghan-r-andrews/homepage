@@ -13,6 +13,15 @@ body {
     font-family: Arial;
 }
 
+.homepage2 {
+    margin: 20px;
+    position: relative; 
+    left: 1550px;
+    font-family: Arial;
+    display: block;
+    text-align: right;
+}
+
 .key-container {
     width: 3360px;
     height: 100%;
@@ -91,6 +100,3 @@ summary {
 font-weight: bold;
 }
 
-.homepage2 {
-    
-}
