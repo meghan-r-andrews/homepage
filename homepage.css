@@ -14,7 +14,7 @@ h1 {
     font-size: 50px;
     text-align: center;
     text-decoration: underline;
-    text-shadow: 2.5px 2.5px 1px rgb(245, 241, 237);
+    text-shadow: 2.5px 2.5px 1px rgb(245, 241, 237), 4px 3px 1px rgb(184, 134, 11);
     position: relative;
     text-decoration-color: rgb(123, 246, 78);
 }
