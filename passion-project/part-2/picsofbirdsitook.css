@@ -11,6 +11,42 @@ h1 {
     margin-bottom: 0;
 }
 
+.header {
+    background-color: antiquewhite;
+    border: 4px;
+    border-style:solid;
+    border-color: rgb(47, 68, 68);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 40px 300px;
+    min-width: 200px;
+}
+
+.pics-videos {
+    font-family: "Gloock";
+    text-align: center;
+    font-size: 45px;
+    color:rgb(47, 68, 68);
+    background-color: antiquewhite;
+    border: 4px;
+    border-style:solid;
+    border-color: rgb(47, 68, 68);
+    margin: 40px 200px 40px 200px;
+    padding-bottom: 20px;
+    border-radius: 10px;
+}
+
+.header {
+    background-color: antiquewhite;
+    border: 4px;
+    border-style:solid;
+    border-color: rgb(47, 68, 68);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 40px 300px;
+    min-width: 200px;
+}
+
 h2{
     font-family: "Gloock";
     color:rgb(47, 31, 47);
@@ -100,16 +136,3 @@ hr {
     border-radius: 20px;
 }
 
-.pics-videos {
-    font-family: "Gloock";
-    text-align: center;
-    font-size: 45px;
-    color:rgb(47, 68, 68);
-    background-color: antiquewhite;
-    border: 4px;
-    border-style:solid;
-    border-color: rgb(47, 68, 68);
-    margin: 40px 200px 40px 200px;
-    padding-bottom: 15px;
-    border-radius: 10px;
-}

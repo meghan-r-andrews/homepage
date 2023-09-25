@@ -2,25 +2,23 @@
     box-sizing: border-box;
 }
 
-body {
-    background-image: url("main.jpg");
-    background-size: cover;
+    body {
     margin: 0;
-    /* background-color: rgb(177, 235, 235); */
+    background-color: rgb(194, 248, 243);}
 
-}
+
 
 h1 {
-    color: darkgoldenrod;
+    color: rgb(30, 11, 98);
     font-family: "Kumar One";
     font-size: 50px;
     text-align: center;
     text-decoration: underline;
-    margin-bottom: 0;
-    padding-left: 30px;
-    text-shadow: 2px 2px 1px antiquewhite;
+    text-shadow: 2.5px 2.5px 1px rgb(245, 241, 237);
     position: relative;
+    text-decoration-color: rgb(123, 246, 78);
 }
+
 
 p {
     color: darkslategray;
@@ -28,8 +26,44 @@ p {
     font-family: "DM Sans";
     padding: 10px 30px 0 0;
     margin-top: 10px;
-    text-align: right;
+    text-align: left;
 }
+
+.intro-container {
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+    bottom: 65px;
+}
+
+.intro-p {
+  width: fit-content;
+  height: fit-content;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+
+  position: relative;
+  top: 90px;
+
+  background-color: rgb(245, 241, 237);
+  border: 12px dashed darkgoldenrod;
+  outline: 6px solid rgb(123, 246, 78);
+  outline-offset: -15px;
+ 
+
+  padding-left: 30px;
+  margin: 0 0 25px 30px;
+}
+
+.alien1, .alien2 {
+    position: relative;
+    z-index: 1;
+    top: 25px;
+}
+
 
 a {
     color: white;
@@ -54,13 +88,19 @@ li {
     background-color: rgba(39, 39, 39, 0.864);
     padding: 20px 0;
     width: 100%;
+    border: 10px solid rgb(123, 246, 78);
+    border-left: none;
+    border-right: none;
 
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
+    align-content: flex-end;
+    align-items: flex-end;
     gap: 40px;
 
-    position: relative;
-    top: 40px;
+    position: absolute;
+    bottom: 0;
     margin-left: 0;
+    z-index: 2;
 }

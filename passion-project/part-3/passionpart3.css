@@ -158,15 +158,26 @@
   h2 {
     font-family: "Courgette";
     color: darkslategray;
-    background: rgb(192, 246, 228);
     padding: 10px;
+  }
+
+  .header {
+    background: rgb(192, 246, 228);
     margin: 40px 450px;
     border-radius: 80%;
+    min-width: 400px;
   }
 
   .honorable, .bodyofwater {
     position: relative;
     top: 20px;
+  }
+
+  .bodyofwater {
+    background: rgb(192, 246, 228);
+    margin: 40px 450px;
+    border-radius: 80%;
+    min-width: 500px;
   }
 
   figure {
@@ -280,7 +291,14 @@ div.backtotoppage {
 }
 
 .seeya {
-  background-color: rgb(248, 192, 230);
+  background-color: rgb(246, 199, 239);
+  display: block;
+  text-align: center;
+  font-family: Arial;
+}
+
+.seeya2 {
+  background-color: rgb(204, 174, 250);
   display: block;
   text-align: center;
   font-family: Arial;
