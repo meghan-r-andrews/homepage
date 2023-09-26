@@ -3,6 +3,10 @@ body {
     padding: 20px;
 }
 
+.listcontainer {
+    
+}
+
 h1 {
 color:rgb(254, 211, 154);
 font-family: "Kumar One";
@@ -18,9 +22,10 @@ summary {
 }
 
 p {
-    color:rgb(16, 16, 75);
+    color:rgb(10, 10, 45);
     font-family: "DM Sans";
     font-size: 17px;
+    margin: 15px 35px;
 }
 
 a {
@@ -34,7 +39,7 @@ a:hover {
 }
 
 a:visited {
-    color:rgb(97, 20, 138);
+    color:rgb(77, 13, 112);
 }
 
 section {
