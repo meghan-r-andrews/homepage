@@ -16,7 +16,7 @@ body {
 .homepage2 {
     margin: 20px;
     position: relative; 
-    left: 1550px;
+    left: 1510px;
     font-family: Arial;
     display: block;
     text-align: right;
@@ -40,12 +40,12 @@ body {
     border-right: 1px solid;
 }
 
-.smallkeycontainer1 {
+/* .smallkeycontainer1 {
     background-color: black;
     width: 40px;
     height: 200px;
     position: absolute;
-}
+} */
 
 
 .big {
