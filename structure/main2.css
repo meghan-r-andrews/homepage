@@ -12,23 +12,23 @@
     display: flex;
 }
 
-
-.item {
+.big-key {
     background-color: white;
     border: 1px solid;
-    width: 280px;
-    height: 500px;
+    width: 100%;
+    height: 410px;
     display: flex; 
     justify-content: flex-end;
 }
 
-.smaller-item {
+.small-key {
     background-color: black;
     width: 3%;
     height: 26%;
     position: absolute;
+    /* left: 78px; */
 }
 
-.item1 {
-    
+.final {
+    width: 1.5%;
 }

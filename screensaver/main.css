@@ -1,0 +1,45 @@
+* { 
+box-sizing: border-box;
+}
+
+body {
+    background-color:lightslategray;
+}
+
+.less-or-more {
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+
+.less {
+    background-color:rgb(133, 133, 215);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.more {
+background-image: url(stars.JPG);
+background-repeat: none;
+background-size: cover;
+}
+
+.back {
+display: block;
+position: relative;
+top: 20px;
+left: 20px;
+}
+
+.box {
+    background-color: rgb(126, 208, 149);
+    width:30vw;
+    height:30vh;
+    border-radius: 100%;
+}
+
+.tenor-gif-embed {
+    width:30vw;
+    height:30vh;
+}

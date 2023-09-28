@@ -1,14 +1,13 @@
 body {
-    background-color:cornflowerblue;
+    /* background-color:cornflowerblue; */
+    background-color: #087da7;
     padding: 20px;
 }
 
-.listcontainer {
-    
-}
 
 h1 {
 color:rgb(254, 211, 154);
+text-shadow: 2px 2px 1px rgb(23, 7, 73);
 font-family: "Kumar One";
 font-size: 50px;
 text-align: center;
@@ -18,14 +17,27 @@ text-decoration:underline;
 summary {
     color:white;
     font-family: "DM Sans";
-    font-size: 30px;
+    font-size: 35px;
 }
 
 p {
-    color:rgb(15, 15, 61);
+    color:rgb(0, 0, 0);
+    text-shadow: .25px .25px 10px rgb(255, 255, 255);
     font-family: "DM Sans";
-    font-size: 17px;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 1.5;
     margin: 15px 35px;
+}
+
+.homepage {
+    background-color: rgb(23, 7, 73);
+    border: 2px solid white;
+    border-radius: 10px;
+    padding: 15px;
+    position: relative;
+    top: 10px;
+    left: -5px;
 }
 
 a {
@@ -38,17 +50,14 @@ a:hover {
     cursor:crosshair;
 }
 
-a:visited {
-    color:rgb(77, 13, 112);
+.homepage:hover {
+    background-color: rgb(70, 55, 16);
 }
 
-section {
-    display: inline-block;
-    float: left;
-    color:darkred;
-    font-family: "DM Sans";
-    font-size: 17px;
+a:visited {
+    color:rgb(245, 202, 209);
 }
+
 
 .images {
     display: flex;
@@ -57,4 +66,8 @@ section {
 
 img {
     border: 2px solid;
+}
+
+.IAE:hover {
+    background-color: rgb(70, 55, 16);
 }
