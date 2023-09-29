@@ -8,27 +8,21 @@ body {
 
 .homepage {
     margin: 20px;
-    position: relative; 
-    top: 10px;
+    position: fixed;
     font-family: Arial;
 }
 
-.homepage2 {
-    margin: 20px;
-    position: relative; 
-    left: 1510px;
-    font-family: Arial;
-    display: block;
-    text-align: right;
-}
 
 .key-container {
     width: 3360px;
     height: 100%;
-    display: flex;
     margin: 20px;
-    flex-direction: row;
     border: 1px solid;
+    display: flex;
+
+    flex-direction: row;
+    position: relative;
+    top:10px;
 }
 
 .key-container::after {
@@ -40,27 +34,110 @@ body {
     border-right: 1px solid;
 }
 
-/* .smallkeycontainer1 {
-    background-color: black;
-    width: 40px;
-    height: 200px;
-    position: absolute;
-} */
-
 
 .big {
-    background-color: white;
+    /* background-color: white; */
     border: 1px solid;
     width: 280px;
     height: 500px;
     padding: 15px;
+
     display: flex;
     align-items: flex-end;
     flex-shrink: 0;
+
+    position: relative;
+ 
 }
 
-.big:hover {
+.big2:hover {
     background-color: rgb(250, 180, 154);
+}
+
+.big2 {
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 0;
+
+}
+
+.big2:hover {
+    background-color: rgb(250, 180, 154);
+}
+
+iframe {
+    z-index: 1;
+    position: relative;
+}
+
+.small-key {
+    background-color: rgb(45, 45, 45);
+    border: 2px solid;
+    border-top: none;
+    width: 30%;
+    height: 53%;
+
+    position: absolute;
+    top: 0;
+    right: -15%;
+    z-index: 1;
+    
+}
+
+.small-key:hover {
+    background-color: lavender;
+    border: 2px solid;
+    border-top: none;
+}
+
+
+.small-key-final {
+    background-color: rgb(45, 45, 45);
+    width: 15%;
+    height: 53%;
+    border-right: none;
+
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+}
+
+/* .small-key-final:hover {
+    background-color: lavender;
+    border: 2px solid;
+    border-top: none;
+} */
+
+.link-container {
+    width: 88%;
+    height: 25%;
+    border: 2px solid black;
+    border-radius: 100%;
+    margin: 10px;
+    top: 90px;
+
+    position: relative;
+    right: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.link-container:hover {
+    background-color: rgb(246, 141, 246);
+}
+
+.link {
+    width: 100%;
+    height: 80%;
+
+    position: absolute;
+ 
 }
 
 .lyrics-container {
