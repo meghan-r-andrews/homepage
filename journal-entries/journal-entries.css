@@ -1,5 +1,4 @@
 body {
-    /* background-color:cornflowerblue; */
     background-color: #087da7;
     padding: 20px;
 }
@@ -12,6 +11,15 @@ font-family: "Kumar One";
 font-size: 50px;
 text-align: center;
 text-decoration:underline;
+}
+
+.entry-container {
+    max-width: 955px;
+    display: flex;
+    justify-contents: center;
+    flex-direction: column;
+
+    margin: 0 auto;
 }
 
 summary {
@@ -28,6 +36,10 @@ p {
     font-weight: bold;
     line-height: 1.5;
     margin: 15px 35px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+
+    max-width: 980px;
 }
 
 .homepage {
@@ -61,7 +73,7 @@ a:visited {
 
 .images {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 img {

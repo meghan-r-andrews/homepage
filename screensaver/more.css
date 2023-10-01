@@ -1,0 +1,167 @@
+* { 
+    box-sizing: border-box;
+    }
+    
+    body {
+        background-color:rgb(12, 12, 12);
+        margin: 0;
+        animation: background 50s infinite alternate linear;
+}
+
+    @keyframes background {
+
+        0% {
+            background-color: rgba(0, 0, 0, 0.50);
+        }
+
+        10% {
+            background-color: rgba(255, 0, 0, 0.50);
+        }
+
+        20% {
+            background-color: rgba(255, 166, 0, 0.50);
+        }
+
+        30% {
+            background-color: rgb(255, 255, 0, 0.50);
+        }
+
+        40% {
+            background-color: rgba(0, 128, 0, 0.50);
+        }
+
+        50% {
+            background-color: rgb(0, 0, 255, 0.50);
+        }
+
+        60% {
+            background-color: rgb(128, 0, 128, 0.50);
+        }
+
+        70% {
+            background-color: rgb(255, 105, 180, 0.50);
+        }
+
+        80% {
+            background-color: rgb(255, 255, 255, 0.50);
+        }
+
+        90% {
+            background-color: rgb(128, 128, 128, 0.50);
+        }
+    
+        100% {
+            background-color:rgba(0, 0, 0, 0.50);
+        }
+    }
+
+    .container-main {
+        width: 100vw;
+        height: 100vh;
+        position: relative;
+    }
+
+    a {
+        font-family: arial;
+        font-size: 30px;
+        color: aqua;
+        padding: 20px;
+        background-color: black;
+        border-radius: 0 10px 10px 10px;
+        border: 2px solid white;
+      
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 4;
+    }
+
+    a:hover {
+        background-color: rgb(36, 0, 128);
+    }
+
+    .cat-baby-container-main {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        position: absolute;
+        justify-content: space-evenly;
+        align-content: space-evenly;
+        position: relative;
+
+        z-index: 2;
+
+    }
+
+    .cat-baby-container1 {
+        display: flex;
+        justify-content: space-evenly;
+    
+        position: absolute;
+
+        top: 5vh;
+        left: auto;
+        right: auto;
+
+      
+    }
+
+    .cat-baby-container2 {
+        display: flex;
+        justify-content: space-evenly;
+        position: absolute;
+
+        top: 50vh;
+        left: 70px;
+
+    }
+    
+    .video-container {
+        /* position: absolute; */
+        margin: 40px;
+        display: flex;
+        justify-content: space-between;
+        animation: videos 25s infinite alternate linear;
+        z-index: 1;
+    }
+
+    @keyframes videos {
+  
+        0% {
+            transform: translateY(0vh);
+        }
+
+        100% {
+            transform: translateY(100vh);
+        }
+    }
+
+    .mover {
+        z-index: 1;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        animation: move 25s infinite linear;
+        z-index: 5;
+        
+    }
+    
+    @keyframes move {
+        0% {
+            transform: translateX(-15vw);
+        }
+    
+        100% {
+            transform: translateX(100vw);
+        }
+    }
+
+    .porcelain {
+        position: absolute;
+        z-index: 3;
+        top: 0;
+        right: 0;
+    }
+
+    
+    
