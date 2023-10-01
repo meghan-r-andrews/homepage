@@ -3,7 +3,7 @@
     }
 
     body {
-        margin: 0;
+        margin: 10px 0 0 0;
         background-color:rgb(22, 22, 83);
     }
 
@@ -27,6 +27,7 @@
         border: 2px solid white;
         border-left: none;
         border-radius: 0 0 10px 0;
+        z-index: 999;
     }
     
     a:hover {
@@ -38,6 +39,7 @@
         justify-content: center;
         align-items: center;
         position: relative;
+        top: 150px;
     }
 
     .square {
@@ -45,30 +47,34 @@
         position: relative;
         width:50vh;
         height:50vh;
-        transform: translateY(35%);
         animation: square 16s infinite linear;
     }
 
     @keyframes square {
         0% {
             background-color: green;
+            transform: scale(1);
         }
 
         25% {
            background-color: aqua;
+           transform: scale(1.25);
         }
 
         50% {
             background-color: violet;
+            transform: scale(1.25);
         }
 
 
         75% {
             background-color: orange;
+            transform: scale(1);
         }
 
         100% {
             background-color: green;
+            transform: scale(1);
         }
 
     }

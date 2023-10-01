@@ -8,6 +8,7 @@
         animation: background 50s infinite alternate linear;
 }
 
+
     @keyframes background {
 
         0% {
@@ -15,50 +16,44 @@
         }
 
         10% {
-            background-color: rgba(255, 0, 0, 0.50);
+            background-color: rgb(255, 0, 0);
         }
 
         20% {
-            background-color: rgba(255, 166, 0, 0.50);
+            background-color: rgb(255, 166, 0);
         }
 
         30% {
-            background-color: rgb(255, 255, 0, 0.50);
+            background-color: rgb(255, 255, 0);
         }
 
         40% {
-            background-color: rgba(0, 128, 0, 0.50);
+            background-color: rgb(0, 128, 0);
         }
 
         50% {
-            background-color: rgb(0, 0, 255, 0.50);
+            background-color: rgb(0, 0, 255);
         }
 
         60% {
-            background-color: rgb(128, 0, 128, 0.50);
+            background-color: rgb(128, 0, 128);
         }
 
         70% {
-            background-color: rgb(255, 105, 180, 0.50);
+            background-color: rgb(255, 105, 180);
         }
 
         80% {
-            background-color: rgb(255, 255, 255, 0.50);
+            background-color: rgb(255, 255, 255);
         }
 
         90% {
-            background-color: rgb(128, 128, 128, 0.50);
+            background-color: rgb(128, 128, 128);
         }
     
         100% {
-            background-color:rgba(0, 0, 0, 0.50);
+            background-color:rgb(0, 0, 0);
         }
-    }
-
-    .container-main {
-        width: 100vw;
-        height: 100vh;
-        position: relative;
     }
 
     a {
@@ -80,9 +75,13 @@
         background-color: rgb(36, 0, 128);
     }
 
-    .cat-baby-container-main {
+    .container-main {
         width: 100vw;
         height: 100vh;
+        position: relative;
+    }
+
+    .cat-baby-container-main {
         display: flex;
         position: absolute;
         justify-content: space-evenly;
@@ -121,18 +120,18 @@
         margin: 40px;
         display: flex;
         justify-content: space-between;
-        animation: videos 25s infinite alternate linear;
+        animation: videos 10s infinite alternate linear;
         z-index: 1;
     }
 
     @keyframes videos {
   
         0% {
-            transform: translateY(0vh);
+            transform: translateY(0%);
         }
 
         100% {
-            transform: translateY(100vh);
+            transform: translateY(100%);
         }
     }
 

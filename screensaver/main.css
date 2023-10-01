@@ -2,8 +2,11 @@
 box-sizing: border-box;
 }
 
+body {
+   margin: 10px;
+}
+
 .back {
-    margin: 0px;
     font-family: arial;
     font-size: 20px;
     color:rgb(6, 47, 6);
@@ -16,6 +19,7 @@ box-sizing: border-box;
 .back:hover {
     background-color: lightblue;
     padding: 10px;
+    border-radius: 0 0 10px 10px;
 }
 
 
