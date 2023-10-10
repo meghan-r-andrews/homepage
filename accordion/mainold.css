@@ -1,0 +1,277 @@
+* { 
+    box-sizing: border-box;
+    }
+    
+    body {
+        font-family: "Roboto";
+        font-size: 22px;
+        position: relative;
+    }
+    
+    .homepage {
+        font-family: arial;
+        font-size: 18px;
+        position: relative;
+    }
+
+    .homepage:hover {
+        background-color: rgb(248, 215, 220);
+        padding: 10px;
+        border-radius: 10px;
+    }
+    
+    
+    .house {
+        max-width: 100%;
+        height: 100%;
+    }
+    
+    .house-container {
+        background-color: rgb(255, 192, 203);
+    
+        max-width: 20%;
+        height: auto;
+        padding: 10px; 
+
+        position: absolute;
+        bottom: 95vh;
+        left: 33vw;
+    }
+    
+    .cat-container {
+        background-color: rgb(180, 180, 251);
+    
+        max-width: 20%;
+        height: auto;
+        padding: 10px; 
+    
+    }
+    
+    
+    .ghost1-container {
+        background-color: rgb(199, 118, 86);
+    
+        max-width: 20%;
+        height: auto;
+        padding: 10px;
+    }
+    
+    .ghost2-container {
+        background-color: rgb(86, 199, 180);
+    
+        max-width: 20%;
+        height: auto;    
+        padding: 10px; 
+    }
+    
+    .ghost3-container {
+        background-color: rgb(145, 145, 145);
+    
+        max-width: 20%;
+        height: auto;
+        padding: 10px;
+    }
+    
+    .ghost4-container {
+        background-color: rgb(240, 229, 162);
+    
+        max-width: 20%;
+        height: auto;
+        padding: 10px;
+    }
+    
+    
+        .house-fact-2, .house-fact-3, .house-fact-4, .cat-fact-2, .cat-fact-3, .cat-fact-4, .ghost1-fact-2, .ghost1-fact-3, .ghost1-fact-4, .ghost2-fact-2, .ghost2-fact-3, .ghost2-fact-4, .ghost3-fact-2, .ghost3-fact-3, .ghost3-fact-4,  .ghost4-fact-2, .ghost4-fact-3, .ghost4-fact-4      {
+            display: none;
+        }
+    
+       
+    
+    
+    @media screen and (max-width:900px) {
+
+        body {
+        font-size: 20px;
+        }
+    
+        .house-fact-1, .house-fact-3, .house-fact-4 {
+            display: none;
+        }
+    
+        .house-fact-2 {
+            display: inline;
+        }
+
+    
+                .cat-fact-1, .cat-fact-3, .cat-fact-4 {
+                    display: none;
+                }
+    
+                .cat-fact-2 {
+                    display: inline;
+                }
+
+    
+    
+        .ghost1-fact-1, .ghost1-fact-3, .ghost1-fact-4 {
+            display: none;
+        }
+    
+        .ghost1-fact-2 {
+            display: inline;
+        }
+    
+    
+                .ghost2-fact-1, .ghost2-fact-3, .ghost2-fact-4, {
+                    display: none;
+                }
+    
+                .ghost2-fact-2 {
+                    display: inline;
+                }
+
+    
+    
+        .ghost3-fact-1, .ghost3-fact-3, .ghost3-fact-4{
+            display: none;
+        }
+    
+        .ghost2-fact-2 {
+            display: inline;
+        }
+    
+    
+                .ghost4-fact-1, .ghost4-fact-3, .ghost4-fact-4{
+                    display: none;
+                }
+    
+                .ghost4-fact-2 {
+                    display: inline;
+                }
+    
+    }
+    
+    
+    @media screen and (max-width:750px) {  
+
+        body {
+            font-size: 18px;
+            }
+        
+        .house-fact-1, .house-fact-2, .house-fact-4 {
+            display: none;
+        }
+    
+        .house-fact-3 {
+            display: inline;
+        }
+    
+    
+    
+                .cat-fact-1, .cat-fact-2, .cat-fact-4 {
+                    display: none;
+                }
+    
+                .cat-fact-3 {
+                    display: inline;
+                }
+    
+    
+        .ghost1-fact-1, .ghost1-fact-2, .ghost1-fact-4{
+            display: none;
+        }
+    
+        .ghost1-fact-3 {
+            display: inline;
+        }
+    
+
+    
+        .ghost2-fact-1, .ghost2-fact-2, .ghost2-fact-4 {
+            display: none;
+        }
+    
+        .ghost2-fact-3 {
+            display: inline;
+        }
+    
+
+    
+                .ghost3-fact-1, .ghost3-fact-2, .ghost3-fact-4 {
+                    display: none;
+                }
+    
+                .ghost3-fact-3 {
+                    display: inline;
+                }
+    
+    
+        .ghost4-fact-1, .ghost4-fact-2, .ghost4-fact-4 {
+            display: none;
+        }
+    
+        .ghost3-fact-3 {
+            display: inline;
+        }
+    
+    }
+    
+    @media screen and (max-width:600px) {
+
+        body {
+            font-size: 16px;
+            }
+    
+        .house-fact-1, .house-fact-2, .house-fact-3 {
+            display: none;
+        }
+    
+        .house-fact-4 {
+            display: inline;
+        }
+    
+    
+                .cat-fact-1, .cat-fact-2, .cat-fact-3 {
+                    display: none;
+                }
+    
+                .cat-fact-4 {
+                    display: inline;
+                }
+    
+    
+        .ghost1-fact-1, .ghost1-fact-2, .ghost1-fact-3 {
+            display: none;
+        }
+    
+        .ghost1-fact-4 {
+            display: inline;
+        }
+       
+                .ghost2-fact-1, .ghost2-fact-2, .ghost2-fact-3 {
+                    display: none;
+                }
+    
+                .ghost2-fact-4 {
+                    display: inline;
+                }
+            
+    
+    
+        .ghost3-fact-1, .ghost3-fact-2, .ghost3-fact-3 {
+            display: none;
+        }
+    
+          .ghost3-fact-4 {
+            display: inline;
+        }
+    
+    
+                .ghost4-fact-1, .ghost4-fact-2, .ghost4-fact-3 {
+                    display: none;
+                }
+    
+                .ghost4-fact-4 {
+                    display: inline;
+                }
+    }

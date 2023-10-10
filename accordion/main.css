@@ -1,277 +1,559 @@
 * { 
-    box-sizing: border-box;
-    }
+box-sizing: border-box;
+}
+
+body {
+    position: relative;
+    font-family: "Roboto";
+    font-size: 18px;
+}
+
+.homepage {
+    font-family: arial;
+    font-size: 18px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.homepage:hover {
+    background-color: rgb(215, 248, 232);
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid blue;
+}
+
+
+.house {
+    max-width: 40%;
+    height: auto;
+    position: relative;
+    top: 15vh;
+    left: 30vw;
+}
+
+.house:hover {
+    background-color: rgb(255, 192, 203);
+    border-radius: 25px;
+}
+
+.cat {
+    max-width: 10%;
+    height: auto;
+    position: relative;
+    bottom: -35vh;
+    left: 15vw;
+}
+
+.cat:hover {
+    background-color:rgb(180, 180, 251);
+    border-radius: 25px;
+    z-index: -1;
+}
+
+.ghost1 {
+    max-width: 7%;
+    height: auto;
+    position: relative;
+    left: -26vw;
+    bottom: -10vh;
+
+}
+
+.ghost1:hover {
+    background-color:rgb(199, 118, 86);
+    border-radius: 25px;
+}
+
+.ghost2 {
+    max-width: 15%;
+    height: auto;
+    position: relative;
+    top: -25vh;
+    left: -43vw;
+}
+
+.ghost2:hover {
+    background-color:rgb(86, 199, 180);
+    border-radius: 25px;
+}
+
+.ghost3 {
+    max-width: 7%;
+    height: auto;
+    position: relative;
+    top: -45vh;
+    left: -18vw;
+}
+
+.ghost3:hover {
+    background-color:rgb(145, 145, 145);
+    border-radius: 25px;
+    padding: 0;
+
+}
+
+
+.ghost4 {
+    max-width: 15%;
+    height: auto;
+    position: relative;
+    top: -3vh;
+    left: -12vw;
+}
+
+.ghost4:hover {
+    background-color:rgb(240, 229, 162);
+    border-radius: 25px;
+}
+
+.house-container {
+    background-color: pink;
+
+    max-width: auto;
+    height: auto;
+    padding: 10px; 
+
+    position: relative;
+    z-index: 1;
     
-    body {
-        font-family: "Roboto";
-        font-size: 22px;
-        position: relative;
-    }
-    
-    .homepage {
-        font-family: arial;
-        font-size: 18px;
-        position: relative;
+}
+
+.cat-container {
+    background-color: rgb(180, 180, 251);
+
+    max-width: auto;
+    height: auto;
+    padding: 10px; 
+    z-index: -1;
+
+}
+
+
+.ghost1-container {
+    background-color: rgb(199, 118, 86);
+
+    max-width: auto;
+    height: auto;
+    padding: 10px;
+}
+
+.ghost2-container {
+    background-color: rgb(86, 199, 180);
+
+    max-width: auto;
+    height: auto;    
+    padding: 10px; 
+}
+
+.ghost3-container {
+    background-color: rgb(145, 145, 145);
+
+    max-width: auto;
+    height: auto;
+    padding: 10px;
+}
+
+.ghost4-container {
+    background-color: rgb(240, 229, 162);
+
+    max-width: auto;
+    height: auto;
+    padding: 10px;
+
+}
+
+
+
+    .house-fact-2 {
+        display: none;
     }
 
-    .homepage:hover {
-        background-color: rgb(248, 215, 220);
-        padding: 10px;
-        border-radius: 10px;
+    .house-fact-3 {
+        display: none;
     }
-    
-    
-    .house {
-        max-width: 100%;
-        height: 100%;
-    }
-    
-    .house-container {
-        background-color: rgba(255, 192, 203, 0.448);
-    
-        max-width: 20%;
-        height: auto;
-        padding: 10px; 
 
-        position: absolute;
-        bottom: 95vh;
-        left: 33vw;
+    .house-fact-4 {
+        display: none;
     }
-    
-    .cat-container {
-        background-color: rgb(180, 180, 251);
-    
-        max-width: 20%;
-        height: auto;
-        padding: 10px; 
-    
-    }
-    
-    
-    .ghost1-container {
-        background-color: rgb(199, 118, 86);
-    
-        max-width: 20%;
-        height: auto;
-        padding: 10px;
-    }
-    
-    .ghost2-container {
-        background-color: rgb(86, 199, 180);
-    
-        max-width: 20%;
-        height: auto;    
-        padding: 10px; 
-    }
-    
-    .ghost3-container {
-        background-color: rgb(145, 145, 145);
-    
-        max-width: 20%;
-        height: auto;
-        padding: 10px;
-    }
-    
-    .ghost4-container {
-        background-color: rgb(240, 229, 162);
-    
-        max-width: 20%;
-        height: auto;
-        padding: 10px;
-    }
-    
-    
-        .house-fact-2, .house-fact-3, .house-fact-4, .cat-fact-2, .cat-fact-3, .cat-fact-4, .ghost1-fact-2, .ghost1-fact-3, .ghost1-fact-4, .ghost2-fact-2, .ghost2-fact-3, .ghost2-fact-4, .ghost3-fact-2, .ghost3-fact-3, .ghost3-fact-4,  .ghost4-fact-2, .ghost4-fact-3, .ghost4-fact-4      {
-            display: none;
-        }
-    
-       
-    
-    
-    @media screen and (max-width:900px) {
 
-        body {
-        font-size: 20px;
-        }
-    
-        .house-fact-1, .house-fact-3, .house-fact-4 {
-            display: none;
-        }
-    
-        .house-fact-2 {
-            display: inline;
-        }
 
-    
-                .cat-fact-1, .cat-fact-3, .cat-fact-4 {
-                    display: none;
-                }
-    
-                .cat-fact-2 {
-                    display: inline;
-                }
-
-    
-    
-        .ghost1-fact-1, .ghost1-fact-3, .ghost1-fact-4 {
-            display: none;
-        }
-    
-        .ghost1-fact-2 {
-            display: inline;
-        }
-    
-    
-                .ghost2-fact-1, .ghost2-fact-3, .ghost2-fact-4, {
-                    display: none;
-                }
-    
-                .ghost2-fact-2 {
-                    display: inline;
-                }
-
-    
-    
-        .ghost3-fact-1, .ghost3-fact-3, .ghost3-fact-4{
-            display: none;
-        }
-    
-        .ghost2-fact-2 {
-            display: inline;
-        }
-    
-    
-                .ghost4-fact-1, .ghost4-fact-3, .ghost4-fact-4{
-                    display: none;
-                }
-    
-                .ghost4-fact-2 {
-                    display: inline;
-                }
-    
+    .cat-fact-2 {
+        display: none;
     }
-    
-    
-    @media screen and (max-width:750px) {  
 
-        body {
-            font-size: 18px;
+    .cat-fact-3 {
+        display: none;
+    }
+
+    .cat-fact-4 {
+        display: none;
+    }
+
+
+    .ghost1-fact-2 {
+        display: none;
+    }
+
+    .ghost1-fact-3 {
+        display: none;
+    }
+
+    .ghost1-fact-4 {
+        display: none;
+    }
+
+
+    .ghost2-fact-2 {
+        display: none;
+    }
+
+    .ghost2-fact-3 {
+        display: none;
+    }
+
+    .ghost2-fact-4 {
+        display: none;
+    }
+
+
+    .ghost3-fact-2 {
+        display: none;
+    }
+
+    .ghost3-fact-3 {
+        display: none;
+    }
+
+    .ghost3-fact-4 {
+        display: none;
+    }
+
+
+    .ghost4-fact-2 {
+        display: none;
+    }
+
+    .ghost4-fact-3 {
+        display: none;
+    }
+
+    .ghost4-fact-4 {
+        display: none;
+    }
+
+
+
+@media screen and (max-width:900px) {
+
+    .house-fact-1 {
+        display: none;
+    }
+
+    .house-fact-2 {
+        display: inline;
+    }
+
+    .house-fact-3 {
+        display: none;
+    }
+
+    .house-fact-4 {
+        display: none;
+    }
+
+
+            .cat-fact-1 {
+                display: none;
+            }
+
+            .cat-fact-2 {
+                display: inline;
+            }
+
+            .cat-fact-3 {
+                display: none;
+            }
+
+            .cat-fact-4 {
+                display: none;
+            }
+
+
+    .ghost1-fact-1 {
+        display: none;
+    }
+
+    .ghost1-fact-2 {
+        display: inline;
+    }
+
+    .ghost1-fact-3 {
+        display: none;
+    }
+
+    .ghost1-fact-4 {
+        display: none;
+    }
+
+    
+
+            .ghost2-fact-1 {
+                display: none;
+            }
+
+            .ghost2-fact-2 {
+                display: inline;
+            }
+
+            .ghost2-fact-3 {
+                display: none;
+            }
+
+            .ghost2-fact-4 {
+                display: none;
+            }
+
+
+    .ghost3-fact-1 {
+        display: none;
+    }
+
+    .ghost2-fact-2 {
+        display: inline;
+    }
+
+    .ghost3-fact-3 {
+        display: none;
+    }
+
+    .ghost3-fact-4 {
+        display: none;
+    }
+
+
+            .ghost4-fact-1 {
+                display: none;
+            }
+
+            .ghost4-fact-2 {
+                display: inline;
+            }
+
+            .ghost4-fact-3 {
+                display: none;
+            }
+
+            .ghost4-fact-4 {
+                display: none;
+            }
+}
+
+
+@media screen and (max-width:750px) {  
+    
+    .house-fact-1 {
+        display: none;
+    }
+
+    .house-fact-2 {
+        display: none;
+    }
+
+    .house-fact-3 {
+        display: inline;
+    }
+
+    .house-fact-4 {
+        display: none;
+    }
+
+
+            .cat-fact-1 {
+                display: none;
+            }
+
+            .cat-fact-2 {
+                display: none;
+            }
+
+            .cat-fact-3 {
+                display: inline;
+            }
+
+            .cat-fact-4 {
+                display: none;
+            }
+
+
+    .ghost1-fact-1 {
+        display: none;
+    }
+
+    .ghost1-fact-2 {
+        display: none;
+    }
+
+    .ghost1-fact-3 {
+        display: inline;
+    }
+
+    .ghost1-fact-4 {
+        display: none;
+    }
+
+
+    .ghost2-fact-1 {
+        display: none;
+    }
+
+    .ghost2-fact-2 {
+        display: none;
+    }
+
+    .ghost3-fact-3 {
+        display: inline;
+    }
+
+    .ghost2-fact-4 {
+        display: none;
+    }
+
+
+            .ghost3-fact-1 {
+                display: none;
+            }
+
+            .ghost3-fact-2 {
+                display: none;
+            }
+
+            .ghost3-fact-3 {
+                display: inline;
+            }
+
+            .ghost3-fact-4 {
+                display: none;
+            }
+
+
+    .ghost4-fact-1 {
+        display: none;
+    }
+
+    .ghost4-fact-2 {
+        display: none;
+    }
+
+    .ghost3-fact-3 {
+        display: inline;
+    }
+
+    .ghost4-fact-4 {
+        display: none;
+    }
+}
+
+@media screen and (max-width:600px) {
+
+    .house-fact-1 {
+        display: none;
+    }
+
+    .house-fact-2 {
+        display: none;
+    }
+
+    .house-fact-3 {
+        display: none;
+    }
+
+    .house-fact-4 {
+        display: inline;
+    }
+
+
+            .cat-fact-1 {
+                display: none;
+            }
+
+            .cat-fact-2 {
+                display: none;
+            }
+
+            .cat-fact-3 {
+                display: none;
+            }
+
+            .cat-fact-4 {
+                display: inline;
+            }
+
+
+    .ghost1-fact-1 {
+        display: none;
+    }
+
+    .ghost1-fact-2 {
+        display: none;
+    }
+
+    .ghost1-fact-3 {
+        display: none;
+    }
+
+    .ghost1-fact-4 {
+        display: inline;
+    }
+   
+            .ghost2-fact-1 {
+                display: none;
+            }
+
+            .ghost2-fact-2 {
+                display: none;
+            }
+
+            .ghost2-fact-3 {
+                display: none;
+            }
+
+            .ghost2-fact-4 {
+                display: inline;
             }
         
-        .house-fact-1, .house-fact-2, .house-fact-4 {
-            display: none;
-        }
-    
-        .house-fact-3 {
-            display: inline;
-        }
-    
-    
-    
-                .cat-fact-1, .cat-fact-2, .cat-fact-4 {
-                    display: none;
-                }
-    
-                .cat-fact-3 {
-                    display: inline;
-                }
-    
-    
-        .ghost1-fact-1, .ghost1-fact-2, .ghost1-fact-4{
-            display: none;
-        }
-    
-        .ghost1-fact-3 {
-            display: inline;
-        }
-    
 
-    
-        .ghost2-fact-1, .ghost2-fact-2, .ghost2-fact-4 {
-            display: none;
-        }
-    
-        .ghost2-fact-3 {
-            display: inline;
-        }
-    
 
-    
-                .ghost3-fact-1, .ghost3-fact-2, .ghost3-fact-4 {
-                    display: none;
-                }
-    
-                .ghost3-fact-3 {
-                    display: inline;
-                }
-    
-    
-        .ghost4-fact-1, .ghost4-fact-2, .ghost4-fact-4 {
-            display: none;
-        }
-    
-        .ghost3-fact-3 {
-            display: inline;
-        }
-    
+    .ghost3-fact-1 {
+        display: none;
     }
-    
-    @media screen and (max-width:600px) {
 
-        body {
-            font-size: 16px;
+    .ghost3-fact-2 {
+        display: none;
+    }
+
+    .ghost3-fact-3 {
+        display: none;
+    }
+
+      .ghost3-fact-4 {
+        display: inline;
+    }
+
+
+            .ghost4-fact-1 {
+                display: none;
             }
-    
-        .house-fact-1, .house-fact-2, .house-fact-3 {
-            display: none;
-        }
-    
-        .house-fact-4 {
-            display: inline;
-        }
-    
-    
-                .cat-fact-1, .cat-fact-2, .cat-fact-3 {
-                    display: none;
-                }
-    
-                .cat-fact-4 {
-                    display: inline;
-                }
-    
-    
-        .ghost1-fact-1, .ghost1-fact-2, .ghost1-fact-3 {
-            display: none;
-        }
-    
-        .ghost1-fact-4 {
-            display: inline;
-        }
-       
-                .ghost2-fact-1, .ghost2-fact-2, .ghost2-fact-3 {
-                    display: none;
-                }
-    
-                .ghost2-fact-4 {
-                    display: inline;
-                }
-            
-    
-    
-        .ghost3-fact-1, .ghost3-fact-2, .ghost3-fact-3 {
-            display: none;
-        }
-    
-          .ghost3-fact-4 {
-            display: inline;
-        }
-    
-    
-                .ghost4-fact-1, .ghost4-fact-2, .ghost4-fact-3 {
-                    display: none;
-                }
-    
-                .ghost4-fact-4 {
-                    display: inline;
-                }
-    }
+
+            .ghost4-fact-2 {
+                display: none;
+            }
+
+            .ghost4-fact-3 {
+                display: none;
+            }
+
+            .ghost4-fact-4 {
+                display: inline;
+            }
+}

@@ -1,0 +1,113 @@
+* { 
+    box-sizing: border-box;
+    }
+    
+    body {
+        margin: 0;
+    }
+
+    
+    .back {
+        font-family: arial;
+        font-size: 18px;
+        position: relative;
+        top: 15px;
+        left: 15px;
+    }
+    
+    .back:hover {
+        background-color: rgb(248, 215, 220);
+        padding: 10px;
+        border-radius: 10px;
+        border: 2px solid blue;
+    }
+    
+    
+    .container-all {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+    }
+    
+    img {
+        display: block;
+        width: 40vw;
+        height: auto;
+        margin: 0 auto;
+    
+    }
+    
+    .house-container {
+        font-family: "Roboto";
+        font-size: 28px;
+        text-align: center;
+    
+        background-color:rgb(255, 192, 203);
+        border: 2.5px solid;
+        
+        width: 50%;
+        padding: 20px; 
+
+        transition: background-color 1s;
+        }
+    
+       .house-fact-2, .house-fact-3, .house-fact-4 {
+        display: none;
+       } 
+    
+    
+        @media screen and (max-width:900px) {
+    
+            .house-container {
+                font-size: 24px;
+                background-color: rgb(173, 192, 139);
+            }
+    
+            .house-fact-1, .house-fact-3, .house-fact-4 {
+                display: none;
+            }
+    
+            .house-fact-2 {
+                display: inline;
+            }
+        }
+    
+    
+        @media screen and (max-width:750px) {
+    
+            .house-container {
+                font-size: 20px;
+                background-color: rgb(251, 225, 193);
+            }
+    
+            .house-fact-1, .house-fact-2, .house-fact-4 {
+                display: none;
+            }
+    
+            .house-fact-3 {
+                display: inline;
+            }
+    
+        }
+    
+    
+        @media screen and (max-width:600px) {
+    
+            .house-container {
+                font-size: 16px;
+                background-color: rgb(253, 143, 143);
+            }
+    
+            .house-fact-1, .house-fact-2, .house-fact-3 {
+                display: none;
+            }
+    
+            .house-fact-4 {
+                display: inline;
+            }
+    
+        }
+    
+    
