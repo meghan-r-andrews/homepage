@@ -34,18 +34,17 @@
     
     img {
         display: block;
-        width: 40vw;
+        width: 25vw;
         height: auto;
-        margin: 0 auto;
     
     }
     
-    .house-container {
+    .ghost1-container {
         font-family: "Roboto";
         font-size: 28px;
         text-align: center;
     
-        background-color:rgb(255, 192, 203);
+        background-color:rgb(237, 102, 102);
         border: 2.5px solid;
         
         width: 50%;
@@ -54,23 +53,23 @@
         transition: background-color 1s;
         }
     
-       .house-fact-2, .house-fact-3, .house-fact-4 {
+       .ghost1-fact-2, .ghost1-fact-3, .ghost1-fact-4 {
         display: none;
        } 
     
     
         @media screen and (max-width:1200px) {
     
-            .house-container {
+            .ghost1-container {
                 font-size: 24px;
-                background-color: #98af29;
+                background-color: #b46dfb;
             }
     
-            .house-fact-1, .house-fact-3, .house-fact-4 {
+            .ghost1-fact-1, .ghost1-fact-3, .ghost1-fact-4 {
                 display: none;
             }
     
-            .house-fact-2 {
+            .ghost1-fact-2 {
                 display: inline;
             }
         }
@@ -78,16 +77,16 @@
     
         @media screen and (max-width:900px) {
     
-            .house-container {
+            .ghost1-container {
                 font-size: 20px;
-                background-color: #FFF800;
+                background-color: rgb(245, 253, 22);
             }
     
-            .house-fact-1, .house-fact-2, .house-fact-4 {
+            .ghost1-fact-1, .ghost1-fact-2, .ghost1-fact-4 {
                 display: none;
             }
     
-            .house-fact-3 {
+            .ghost1-fact-3 {
                 display: inline;
             }
     
@@ -96,16 +95,16 @@
     
         @media screen and (max-width:600px) {
     
-            .house-container {
+            .ghost1-container {
                 font-size: 16px;
-                background-color: #f68a37;
+                background-color: rgb(110, 148, 253);
             }
     
-            .house-fact-1, .house-fact-2, .house-fact-3 {
+            .ghost1-fact-1, .ghost1-fact-2, .ghost1-fact-3 {
                 display: none;
             }
     
-            .house-fact-4 {
+            .ghost1-fact-4 {
                 display: inline;
             }
     

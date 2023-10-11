@@ -6,6 +6,7 @@ body {
     position: relative;
     font-family: "Roboto";
     font-size: 18px;
+    margin: 0;
 }
 
 .homepage {
@@ -23,13 +24,24 @@ body {
     border: 2px solid blue;
 }
 
+.container-container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    position: relative;
+    max-width: 40%;
+}
 
 .house {
-    max-width: 40%;
+    /* max-width: 40%; */
+    width: 100%;
     height: auto;
     position: relative;
-    top: 15vh;
-    left: 30vw;
+
 }
 
 .house:hover {
@@ -38,39 +50,39 @@ body {
 }
 
 .cat {
-    max-width: 10%;
+    max-width: 10vw;
     height: auto;
-    position: relative;
-    bottom: -35vh;
-    left: 15vw;
+    position: absolute;
+    bottom: -200px;
+    right: 130px;
 }
 
 .cat:hover {
     background-color:rgb(180, 180, 251);
     border-radius: 25px;
-    z-index: -1;
 }
 
 .ghost1 {
-    max-width: 7%;
+    max-width: 7vw;
     height: auto;
-    position: relative;
-    left: -26vw;
-    bottom: -10vh;
+    position: absolute;
+    left: -90px;
+    bottom: -30px;
 
 }
 
 .ghost1:hover {
-    background-color:rgb(199, 118, 86);
+    background-color:rgb(237, 102, 102);
     border-radius: 25px;
 }
 
 .ghost2 {
-    max-width: 15%;
+    max-width: 12vw;
     height: auto;
-    position: relative;
-    top: -25vh;
-    left: -43vw;
+    position: absolute;
+    left: -200px;
+    bottom: 300px;
+
 }
 
 .ghost2:hover {
@@ -79,11 +91,12 @@ body {
 }
 
 .ghost3 {
-    max-width: 7%;
+    max-width: 7vw;
     height: auto;
-    position: relative;
-    top: -45vh;
-    left: -18vw;
+    position: absolute;
+    top: -80px;
+    right: 125px;
+
 }
 
 .ghost3:hover {
@@ -95,12 +108,13 @@ body {
 
 
 .ghost4 {
-    max-width: 15%;
+    max-width: 12vw;
     height: auto;
-    position: relative;
-    top: -3vh;
-    left: -12vw;
+    position: absolute;
+    right: -150px;
+    top: 60px;
 }
+
 
 .ghost4:hover {
     background-color:rgb(240, 229, 162);
