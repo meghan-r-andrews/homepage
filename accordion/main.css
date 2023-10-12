@@ -24,6 +24,12 @@ body {
     border: 2px solid blue;
 }
 
+.instructions {
+    text-align: center;
+    margin: 10px 300px;
+    position: relative;
+    top: 60px;
+}
 .container-container {
     height: 100vh;
     display: flex;
