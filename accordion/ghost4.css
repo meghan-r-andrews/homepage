@@ -39,12 +39,12 @@
     
     }
     
-    .ghost1-container {
+    .ghost4-container {
         font-family: "Roboto";
         font-size: 28px;
         text-align: center;
     
-        background-color:rgb(237, 102, 102);
+        background-color:#ffff76;
         border: 2.5px solid;
         
         width: 50%;
@@ -53,23 +53,23 @@
         transition: background-color 1s;
         }
     
-       .ghost1-fact-2, .ghost1-fact-3, .ghost1-fact-4 {
+       .ghost4-fact-2, .ghost4-fact-3, .ghost4-fact-4 {
         display: none;
        } 
     
     
         @media screen and (max-width:1200px) {
     
-            .ghost1-container {
+            .ghost4-container {
                 font-size: 24px;
-                background-color: #b46dfb;
+                background-color: #fa9949;
             }
     
-            .ghost1-fact-1, .ghost1-fact-3, .ghost1-fact-4 {
+            .ghost4-fact-1, .ghost4-fact-3, .ghost4-fact-4 {
                 display: none;
             }
     
-            .ghost1-fact-2 {
+            .ghost4-fact-2 {
                 display: inline;
             }
         }
@@ -77,16 +77,16 @@
     
         @media screen and (max-width:900px) {
     
-            .ghost1-container {
+            .ghost4-container {
                 font-size: 20px;
-                background-color: #a1dda2;
+                background-color: #6894fa;
             }
     
-            .ghost1-fact-1, .ghost1-fact-2, .ghost1-fact-4 {
+            .ghost4-fact-1, .ghost4-fact-2, .ghost4-fact-4 {
                 display: none;
             }
     
-            .ghost1-fact-3 {
+            .ghost4-fact-3 {
                 display: inline;
             }
     
@@ -95,16 +95,16 @@
     
         @media screen and (max-width:600px) {
     
-            .ghost1-container {
+            .ghost4-container {
                 font-size: 16px;
-                background-color: #D3D3C7;
+                background-color: #bdffdc;
             }
     
-            .ghost1-fact-1, .ghost1-fact-2, .ghost1-fact-3 {
+            .ghost4-fact-1, .ghost4-fact-2, .ghost4-fact-3 {
                 display: none;
             }
     
-            .ghost1-fact-4 {
+            .ghost4-fact-4 {
                 display: inline;
             }
     
