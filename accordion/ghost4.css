@@ -38,6 +38,14 @@
         height: auto;
     
     }
+
+    .sam {
+        color: black;
+    }
+
+    .sam:visited {
+        color: black;
+    }
     
     .ghost4-container {
         font-family: "Roboto";
