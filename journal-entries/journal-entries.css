@@ -28,6 +28,10 @@ summary {
     font-size: 35px;
 }
 
+details {
+    position: relative;
+}
+
 p {
     color:rgb(0, 0, 0);
     text-shadow: .25px .25px 10px rgb(255, 255, 255);
@@ -40,6 +44,7 @@ p {
     padding-bottom: 15px;
 
     max-width: 980px;
+    position: relative;
 }
 
 .homepage {
@@ -83,3 +88,16 @@ img {
 .IAE:hover {
     background-color: rgb(70, 55, 16);
 }
+
+.screenshots {
+    width: 350px;
+    height: 120px;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    position: relative;
+    left: 10vw;
+    margin-bottom: 15px;
+}
+
+

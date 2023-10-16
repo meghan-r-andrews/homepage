@@ -36,7 +36,11 @@
         display: block;
         width: 25vw;
         height: auto;
-    
+
+    }
+
+    .ghost-container {
+        transition: background-color 1s;
     }
     
     .ghost2-container {
@@ -53,9 +57,10 @@
         transition: background-color 1s;
         }
     
-       .ghost2-fact-2, .ghost2-fact-3, .ghost2-fact-4 {
+       .ghost2-fact-2, .ghost2-fact-3, .ghost2-fact-4, .ghost2-2, .ghost2-3, .ghost2-4 {
         display: none;
        } 
+
     
     
         @media screen and (max-width:1200px) {
@@ -65,11 +70,11 @@
                 background-color: #f98bff;
             }
     
-            .ghost2-fact-1, .ghost2-fact-3, .ghost2-fact-4 {
+            .ghost2-fact-1, .ghost2-fact-3, .ghost2-fact-4, .ghost2-1, .ghost2-3, .ghost2-4 {
                 display: none;
             }
     
-            .ghost2-fact-2 {
+            .ghost2-fact-2, .ghost2-2 {
                 display: inline;
             }
         }
@@ -82,11 +87,11 @@
                 background-color: #6fbcff;
             }
     
-            .ghost2-fact-1, .ghost2-fact-2, .ghost2-fact-4 {
+            .ghost2-fact-1, .ghost2-fact-2, .ghost2-fact-4,  .ghost2-1, .ghost2-2, .ghost2-4 {
                 display: none;
             }
     
-            .ghost2-fact-3 {
+            .ghost2-fact-3, .ghost2-3 {
                 display: inline;
             }
     
@@ -100,12 +105,12 @@
                 background-color: #ccfd94;
             }
     
-            .ghost2-fact-1, .ghost2-fact-2, .ghost2-fact-3 {
+            .ghost2-fact-1, .ghost2-fact-2, .ghost2-fact-3, .ghost2-1, .ghost2-2, .ghost2-3 {
                 display: none;
             }
            
     
-            .ghost2-fact-4 {
+            .ghost2-fact-4, .ghost2-4 {
                 display: inline;
             }
     

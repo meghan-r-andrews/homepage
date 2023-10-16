@@ -26,10 +26,18 @@ body {
 
 .instructions {
     text-align: center;
-    margin: 10px 300px;
     position: relative;
     top: 60px;
+    max-height: 100px;
+    max-width: 800px;
+    margin: 0 15px;
 }
+
+.instruction-container {
+    display: flex; 
+    justify-content: center;
+}
+
 .container-container {
     height: 100vh;
     display: flex;
