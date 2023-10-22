@@ -47,6 +47,22 @@ p {
     position: relative;
 }
 
+/* ul {
+        color:rgb(0, 0, 0);
+        text-shadow: .25px .25px 10px rgb(255, 255, 255);
+        font-family: "DM Sans";
+        font-size: 20px;
+        font-weight: bold;
+        line-height: 1.5;
+        /* margin: 15px 35px;
+        padding-top: 15px;
+        padding-bottom: 15px; */
+    
+        max-width: 980px;
+        position: relative;
+    } */
+
+
 .homepage {
     background-color: rgb(23, 7, 73);
     border: 2px solid white;
@@ -98,6 +114,15 @@ img {
     position: relative;
     left: 10vw;
     margin-bottom: 15px;
+}
+
+.quote {
+    background-color: antiquewhite;
+    padding: 20px;
+    border-radius: 10px;
+    /* position: relative;
+    top: 20px; */
+
 }
 
 
