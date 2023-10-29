@@ -1,0 +1,37 @@
+* { 
+box-sizing: border-box;
+}
+
+
+@font-face {
+    font-family: 'frutiger_lt_std65_bold';
+    src: url('frutigerltstd-bold-webfont.woff2') format('woff2'),
+         url('frutigerltstd-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body {
+    background-color: lavender;
+}
+
+.defaults {
+    font-family:'Courier New', Courier, monospace;
+}
+
+.google {
+    font-family: 'Young Serif', serif;
+}
+
+.new-google {
+    font-family: 'Space Mono', monospace;
+}
+
+.adobe {
+    font-family: "mercato-variable", sans-serif;
+}
+
+.squirrel {
+    font-family: 'frutiger_lt_std65_bold', sans-serif;
+}

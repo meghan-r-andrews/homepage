@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Control</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <html lang="en">
+        <link rel="stylesheet" href="main.css">
+        <link rel="icon" type="image/png" href="sunflower.png">
+        <link rel="stylesheet" href="https://use.typekit.net/anp2naw.css">
+    </head>
+    
+    <body>
+
+        <a class="homepage" href="../index.html">Back to Homepage</a> 
+
+    <div class="questions-container">
+
+        <ul>
+
+            <li class="alternate1">What would you like your scenery to look like? I'll give you a few options to choose from but you can also enter your own customized vision below.
+
+                <div class="scenery-container">
+
+                    <button class="reveal-scene1"> Big Sur right before a rain storm</button>
+
+                        <div id="scenery" class="bigsur scene">
+                            <img src="pics/bigsur.JPG" alt="Big Sur coastline with dark rain clouds hovering above.">
+                        </div>
+
+                    <button class="reveal-scene2"> The Atacama desert at dusk</button>
+
+                        <div id="scenery" class="desert scene">
+                            <img src="pics/desert-dusk.png" alt="Desert scene at dusk.">
+                        </div>
+
+                    <button class="reveal-scene3"> San Francisco during the daytime</button>
+
+                        <div id="scenery" class="sf scene">
+                            <img src="pics/sanfrancisco.JPG" alt="San Francisco city skyline.">
+                        </div>
+
+                    <button class="reveal-scene4">Vegas at night-time</button>
+
+                        <div id="scenery" class="vegas scene">
+                            <img src="pics/vegas.JPG" alt="Underhead view of many little globe light bulbs in Las Vegas.">
+                        </div>
+
+                </div>
+
+                    <form class="other-scenery" style="padding-bottom: 10px;">
+                        <label for="other">Other</label>
+                        <input type="text" id="other" name="other">
+                    </form>
+
+                
+
+            
+
+
+            </li>
+
+
+            <li class="alternate2">Would you like for other people to be around <br> or would you like to be alone? <br> Want some animals around?
+            
+
+                <div id="container" class="people-animals">
+                    <button onclick="generatePerson()">Click to make a person appear</button>
+
+                    <button onclick="generateAnimal()">Click to make an animal appear</button>
+                </div>
+
+            </li>
+
+
+            <li class="alternate1">If other people are present, do you want to interact <br> or would you just like company?
+                <form>
+                    <input type="radio" id="interact" name="interact" value="interact">
+                    <label for="interact">Interact</label><br>
+
+                    <input type="radio" id="interact" name="interact" value="interact">
+                    <label for="interact">No interaction, just company</label><br>
+                </form>
+            </li>
+
+
+            <li class="alternate2">If you'd like to interact, how would you like to do so? 
+                <form>
+                    <input type="checkbox" id="interact1" name="interact-option1" value="interact-option1">
+                    <label for="interact-option-1">Talking out loud</label><br>
+
+                    <input type="checkbox" id="interact-option2" name="interact-option2" value="interact-option2">
+                    <label for="interact-option2">Typing/writing</label><br>
+
+                    <input type="checkbox" id="interact-option3" name="interact-option3" value="interact-option3">
+                    <label for="interact-option3">The exchange of knowing glances/facial expressions</label><br>
+
+                    <input type="checkbox" id="interact-option4" name="interact-option4" value="interact-option4">
+                    <label for="other">Other</label>
+                    <input type="text" id="other" name="other">
+                </form>
+            </li>
+
+
+            <li class="alternate1">Want some noise? <br>
+
+            <div class="sound-container">
+
+                <figure>
+                    <audio id="myAudio" controls>
+                        <source src="naturenoise.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                    <figcaption class="sound-descriptions"><i><b>Sound description: </b></i> <br>
+                    Night-time nature sounds. Crickets chirp, an occasional frog chimes in.
+                    </figcaption>
+                </figure>
+
+                <div class="audio2">
+
+                <figure class="sound-descriptions">
+                    <audio id="myAudio" controls>
+                        <source src="bar-chatter.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                    <figcaption class="sound-descriptions"><i><b>Sound description: </b></i> <br>
+                    Ambient chatter at a bar with live music playing.
+                    </figcaption>
+                </figure>
+            </div>
+
+            </div>
+
+
+            </li>
+
+        </ul>
+    </div>
+
+
+    
+            <div class="font-selector">
+                <label for="font-selector">Select font-type</label><br>
+                <select id="font-selector">
+                    <option value="sans-serif">sans serif</option>
+                    <option value="serif">serif</option>
+                    <option value="OpenDyslexic">open dyslexic</option>
+                </select>
+
+
+
+            <div class="textsize">
+                <label for="font-size">Adjust text size</label><br> 
+            </div>
+                <div class="slidecontainer">
+                    <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+                  </div>
+
+                  <div class="color-button">
+                    <button class="change-color">Click here to change color scheme</button>
+                  </div>
+        
+            </div>
+
+       
+
+         
+<!-- 
+            <script>
+
+                <function ACTION() {
+                    var ID = document.getElementById("ID");
+
+                    ID.classList.toggle("CLASS NAME");
+                }
+
+                function showPic() { 
+                  var scenery = document.getElementById("scenery");
+                                
+         
+                    scenery.classList.toggle("active");
+              
+
+
+                    document.body.classList.toggle ("dark");
+                    backgroundImage.classList.toggle("reveal");
+
+                }
+
+            </script> -->
+
+
+            <script src="jquery-3.7.1.min.js"></script>
+
+            <script src="scripts.js"></script>
+
+
+         
+    </body>
+</html>

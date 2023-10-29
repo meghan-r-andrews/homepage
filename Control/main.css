@@ -1,0 +1,213 @@
+* { 
+box-sizing: border-box;
+}
+
+body {
+    background-color:#303248;
+    color: #aee3b0;
+    font-size: 27px;
+    font-family: "nimbus-sans", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    margin-bottom: 20px;
+}
+
+.light {
+  background-color:rgb(232, 232, 211);
+  color:#fe3933;
+}
+
+.alternate1 {
+  background-color: #1d1e29;
+  padding: 20px;
+}
+
+.alternate1.light {
+  background-color: #c4faf5;
+  border: 1.9px solid #461488;
+}
+
+.alternate2 {
+background-color: #46465e;
+padding: 20px;
+}
+
+.alternate2.light {
+  background-color: #c9fabc;
+  border: 1.9px solid #461488;
+  border-top: none;
+  border-bottom: none;
+}
+
+.homepage {
+  font-size: 20px;
+  font-family: "nimbus-sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  position: relative;
+  left: 20px;
+  top: 20px;
+  background-color: rgb(244, 219, 219);
+  color: blue;
+  padding: 10px;
+  border-radius: 5px;
+  1.9px solid #461488;
+}
+
+.homepage:hover {
+  background-color: rgb(224, 62, 13);
+  color: white;
+}
+
+.homepage.light{
+  background-color: #0d0961;
+  color: #c9fabc;
+}
+
+.homepage.light:hover {
+  background-color: #224219;
+  color: white;rgb(44, 76, 35)
+}
+
+form {
+  color: rgb(244, 219, 219);
+  padding-top: 10px;
+ }
+
+ form.light {
+  color: #461488;
+  background-color: none;
+  background-color: transparent;
+ }
+
+.font-selector {
+  font-size: 20px;
+  position: fixed;
+  top: 15px;
+  right: 15px;
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  background-color: #46465e;
+  padding: 15px;
+}
+
+.font-selector.light {
+  background-color: #c9fabc;
+  color: #461488;
+  border: 1.9px solid #461488;
+}
+
+.textsize {
+  position: relative;
+  top: 5px;
+}
+
+.slider {
+  max-width: 122px;
+  text-align: center;
+  padding-top: 5px;
+}
+
+.color-button {
+  max-width: 122px;
+  position: relative;
+  bottom: 2px;
+}
+
+.questions-container {
+  position: relative;
+  left: 40px;
+  top: 40px;
+ 
+  min-width: 25vw;
+  max-width: 50vw;
+}
+
+.scenery-container {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 10px;
+  position: relative;
+  top: 10px;
+  padding: 10px 0 ;
+}
+
+.scene {
+  width: 300px;
+  height: 200px;
+  position: fixed;
+  /* left:
+  bottom: */
+  display: none;
+}
+
+.scene.show {
+  display: block;
+}
+
+.bigsur, .desert, .sf, .vegas {
+  display: none;
+  width: 300px;
+  height: 200px;
+}
+
+.bigsur.show, .desert.show, .sf.show, .vegas.show {
+  display: block;
+}
+
+.other-scenery {
+  position: relative;
+  top: 9px;
+}
+
+.people-animals {
+  position: relative;
+  top: 3px;
+  padding: 2px;
+}
+
+.sound-container {
+position: relative;
+display: flex;
+flex-direction: column;
+justify-content: center;
+top: 5px;
+}
+
+.sound-descriptions {
+  color: white;
+  font-size: 16px;
+}
+
+.sound-descriptions.light {
+  color: #4f0a95;
+  background-color: transparent;
+}
+
+.audio2 {
+  position: relative;
+  bottom: 12px;
+}
+
+#myAudio {
+  border: 1.5px solid white;
+  border-radius: 7px;
+}
+
+#myAudio.light {
+  border: 1.5px solid black;
+  border-radius: 7px;
+}
+
+
+
+
+
+
+
+
+
+
+
