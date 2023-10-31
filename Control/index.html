@@ -9,7 +9,7 @@
         <link rel="stylesheet" href="https://use.typekit.net/anp2naw.css">
     </head>
     
-    <body>
+    <body id="body">
 
         <a class="homepage" href="../index.html">Back to Homepage</a> 
 
@@ -52,21 +52,33 @@
                         <input type="text" id="other" name="other">
                     </form>
 
-                
-
-            
-
-
             </li>
 
 
             <li class="alternate2">Would you like for other people to be around <br> or would you like to be alone? <br> Want some animals around?
             
 
-                <div id="container" class="people-animals">
-                    <button onclick="generatePerson()">Click to make a person appear</button>
+                <div id="radio" class="people-animals">
+                    <button id="btn1" class= "generatePerson">Click to make a person appear</button>
 
-                    <button onclick="generateAnimal()">Click to make an animal appear</button>
+
+                    <div class="radio-btn draggable">
+                        <input type="radio">
+                    </div>               
+
+                    <button id="btn2" class="generateAnimal">Click to make an animal appear</button>
+
+                    <div class="animal draggable">
+                        <select id="animal">
+                            <option value="select animal">*select animal*</option>
+                            <option value="dog">dog</option>
+                            <option value="cat">cat</option>
+                            <option value="bird">bird</option>
+                            <option value="horse">horse</option>
+                            <option value="dolphin">dolphin</option>
+                            <option value="tree frog">tree frog</option>
+                            <option value="other animal">other animal</option>
+                        </select>
                 </div>
 
             </li>
@@ -152,7 +164,7 @@
                 <label for="font-size">Adjust text size</label><br> 
             </div>
                 <div class="slidecontainer">
-                    <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+                    <input type="range" min="12" max="42" id="slider" class="slider">
                   </div>
 
                   <div class="color-button">
@@ -173,25 +185,19 @@
                     ID.classList.toggle("CLASS NAME");
                 }
 
-                function showPic() { 
-                  var scenery = document.getElementById("scenery");
-                                
-         
-                    scenery.classList.toggle("active");
-              
-
-
-                    document.body.classList.toggle ("dark");
-                    backgroundImage.classList.toggle("reveal");
-
-                }
-
             </script> -->
 
+        
 
             <script src="jquery-3.7.1.min.js"></script>
 
             <script src="scripts.js"></script>
+
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+            <script src="jquery-ui.min.js"></script>
+
+
 
 
          

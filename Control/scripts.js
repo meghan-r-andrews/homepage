@@ -20,19 +20,53 @@ $(".color-button").click(
 
     $(".reveal-scene2").click(
     function(){
-        $(".").toggleClass("show");
+        $(".desert").toggleClass("show");
     }
   );
 
   $(".reveal-scene3").click(
     function(){
-        $(".bigsur").toggleClass("show");
+        $(".sf").toggleClass("show");
     }
   );
 
   $(".reveal-scene4").click(
     function(){
-        $(".bigsur").toggleClass("show");
+        $(".vegas").toggleClass("show");
     }
   );
+
+
+
+  $(".generatePerson").click(
+    function(){
+      $(".radio-btn").toggleClass("revealPerson")
+    }
+  );
+
+$('input').on('change', function () {
+  var v = $(this).val();
+  $('body').css('font-size', v + 'px')
+  $('span').html(v);
+});
+
+$("#fs").change(function() {
+  //alert($(this).val());
+  $('.changeMe').css("font-family", $(this).val());
+
+});
+
+$(".generateAnimal").click(
+  function(){
+    $(".animal").toggleClass("revealAnimal")
+  }
+);
+
+$( function() {
+  $( ".draggable" ).draggable(
+      { snap: true }
+      );
+} );
+
+
 
