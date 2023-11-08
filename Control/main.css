@@ -12,34 +12,6 @@ body {
     margin-bottom: 20px;
 }
 
-
-.light {
-  background-color:rgb(232, 232, 211);
-  color:#fe3933;
-}
-
-.alternate1 {
-  background-color: #1d1e29;
-  padding: 20px;
-}
-
-.alternate1.light {
-  background-color: #c4faf5;
-  border: 1.9px solid #461488;
-}
-
-.alternate2 {
-background-color: #46465e;
-padding: 20px;
-}
-
-.alternate2.light {
-  background-color: #c9fabc;
-  border: 1.9px solid #461488;
-  border-top: none;
-  border-bottom: none;
-}
-
 .homepage {
   font-size: 20px;
   font-family: "nimbus-sans", sans-serif;
@@ -68,6 +40,34 @@ padding: 20px;
 .homepage.light:hover {
   background-color: #224219;
   color: white;rgb(44, 76, 35)
+}
+
+
+.light {
+  background-color:rgb(232, 232, 211);
+  color:#fe3933;
+}
+
+.alternate1 {
+  background-color: #1d1e29;
+  padding: 20px;
+}
+
+.alternate1.light {
+  background-color: #c4faf5;
+  border: 1.9px solid #461488;
+}
+
+.alternate2 {
+background-color: #46465e;
+padding: 20px;
+}
+
+.alternate2.light {
+  background-color: #c9fabc;
+  border: 1.9px solid #461488;
+  border-top: none;
+  border-bottom: none;
 }
 
 form {
@@ -174,6 +174,8 @@ max-width:100%;
 .radio-btn {
   display: none;
   position: absolute;
+  width: 75px;
+  height: 75px;
   top: -200%;
   right: 30px;
 }
@@ -187,6 +189,8 @@ display: block;
   position: absolute;
   bottom: 200px;
   right: -200px;
+  width: 175px;
+  height: 100px;
 }
 
 .animal.revealAnimal {
