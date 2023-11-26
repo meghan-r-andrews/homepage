@@ -1,6 +1,6 @@
 body {
     background-color: thistle;
-    margin: 20px;
+    margin: 40px;
 }
 
 h1 {
@@ -51,6 +51,7 @@ a{
 a:hover {
     cursor:crosshair;
     background-color:antiquewhite;
+    padding: 10px;
 }
 
 li {

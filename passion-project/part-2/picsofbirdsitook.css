@@ -77,6 +77,7 @@ a{
 a:hover {
     cursor:crosshair;
     background-color:antiquewhite;
+    padding: 10px;
 }
 
 li {

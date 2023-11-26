@@ -1,0 +1,106 @@
+
+.back2 {
+    position: relative;
+    font-family: sans-serif;
+    font-size: 18px;
+    padding: 15px;
+
+    position: relative;
+    top: 15px;
+}
+
+.back2:hover {
+    border: 1px solid;
+    border-radius: 40px;
+    box-shadow: 1px 1px 1px rgb(163, 163, 163);
+}
+
+.leaf-container {
+    margin-top: 70px;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items:center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.leaf-1 {
+    position: relative;
+}
+
+.leaf-2 {
+    position: relative;
+}
+
+.leaf-3 {
+    position: relative;
+}
+
+.leaf-4 {
+    position: relative;
+}
+
+.leaf-5 {
+    position: relative;
+}
+
+.leaf-6 {
+    position: relative;
+}
+
+.leaf-7 {
+    position: relative;
+}
+
+.leaf-8 {
+    position: relative;
+}
+
+.leaf-9 {
+    position: relative;
+}
+
+.leaf-10 {
+    position: relative;
+}
+
+.leaf-11 {
+    position: relative;
+}
+
+.leaf-12 {
+    position: relative;
+}
+
+.leaf-13 {
+    position: relative;
+}
+
+.leaf-14 {
+    position: relative;
+}
+
+.leaf-15 {
+    position: relative;
+}
+
+.leaf-16 {
+    position: relative;
+}
+
+.leaf-17 {
+    position: relative;
+}
+
+.leaf-18 {
+    position: relative;
+}
+
+.leaf-19 {
+    position: relative;
+}
+
+.leaf-20 {
+    position: relative;
+}

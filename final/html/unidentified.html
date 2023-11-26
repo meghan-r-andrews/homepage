@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>FINAL</title>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <html lang="en">
+            
+        <link rel="stylesheet" href="../css/main.css">
+        <link rel="icon" type="image/png" href="sunflower.png">
+
+    </head>
+    
+    <body>
+
+    <a class= "back2" href="../../index.html">Back to homepage</a>
+
+    <div class="color-button">
+        <button>dark mode</button>
+    </div>
+
+    <div class="menu draggable">
+        <details>
+            <summary>MENU</summary>
+                <ul>
+                    <!-- <li> <a href="">About</a> </li> -->
+
+                    <li><a href="../html/identified.html">Identified plants</a></li>
+
+                    <li><a href="../html/unidentified.html">Unidentified plants</a></li>
+                    
+                    <li> <a href="../html/leaves-grid.html">Scans of autumn leaves</a> </li>
+                </ul>
+        </details>
+    </div>
+
+
+    <h1>This is a website about plants<br> 
+        found in Richmond, Virginia.
+    </h1>
+
+    <div class="description">
+        <p>Here are some plants that I took pictures of recently.
+        I took pictures of them because I thought they were pretty.<br>
+        I'm learning how to identify them.<br></p>
+    </div>
+
+
+    <div class="link-container">
+        <a class="switch-link" href="../html/index.html">Identified</a> 
+        <h2>Unidentified</h2>
+    </div>
+
+
+        <div class="gallery">
+
+            <!-- <figure>
+                <img src="" alt="">
+                    <figcaption>
+                    </ficaption>
+            </figure> -->
+
+
+            <figure>
+                <img class="vertical" src="../pics/unidentified/IMG_5433 2.jpg" alt="">
+                    <figcaption>
+                    </ficaption>
+            </figure>
+
+
+        <!-- <div class="image-container">
+            <figure>
+                <img src="../pics/identified/american-beautyberry.JPG" alt="">
+                    <figcaption>American Beautyberry
+                        <a href="#" id="popup-link" class="see-more">See more</a>
+                    </ficaption>
+
+                    <div id="popup-window" class="popup-container">
+
+                        <p>More pictures of American Beautyberry</p>
+
+                        <button id="close-button" class="x">X</button>
+
+                        <img src="../pics/identified/more-pics/american-beautyberry/american-beautyberry-1.JPG" alt="">
+
+                        <img src="../pics/identified/more-pics/american-beautyberry/american-beautyberry-2.JPG" alt="">
+
+                        <img class="vertical" src="../pics/identified/more-pics/american-beautyberry/american-beautyberry-3.JPG" alt="">
+
+                        <img class="vertical" src="../pics/identified/more-pics/american-beautyberry/american-beautyberry-4.JPG" alt=""><br>
+
+                        <button id="close-button">Close</button>
+                      </div>
+            </figure>
+        </div> -->
+
+        </div>
+
+        <script>
+            // Get the elements by their ID
+            var popupLink = document.getElementById("popup-link");
+            var popupWindow = document.getElementById("popup-window");
+            var closeButton = document.getElementById("close-button");
+
+            // Show the pop-up window when the link is clicked
+            popupLink.addEventListener("click", function(event) {
+              event.preventDefault();
+              popupWindow.style.display = "block";
+            });
+
+            // Hide the pop-up window when the close button is clicked
+            closeButton.addEventListener("click", function() {
+              popupWindow.style.display = "none";
+            });
+
+          </script>  
+
+            <script src="../javascript/scripts-identified.js"></script>
+
+            <script src="../javascript/jquery-3.7.1.min.js"></script>
+
+            <script src="../javascript/jquery-ui.min.js"></script>
+          
+
+    </body>
+</html>
