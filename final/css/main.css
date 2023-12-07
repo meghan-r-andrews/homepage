@@ -2,70 +2,201 @@
     box-sizing: border-box;
     }
 
+    @font-face {
+      font-family: 'open dyslexic';
+      src: url('../opendyslexic-regular-webfont.woff2') format('woff2'),
+           url('../opendyslexic-regular-webfont.woff') format('woff');
+      font-weight: normal;
+      font-style: normal;
+    }
+
     a {
-        font-family: sans-serif;
-        font-size: 18px;
+        font-size: 1.1rem;
         padding: 10px;
+        color: #2c3636;
+      }
+
+      a.dark {
+        color: #e9c8e6;
       }
       
       a:hover {
-        font-size: 19px;
+        font-size: 1.2rem;
+        color: honeydew;
       }
 
     .back2 {
+        background-color: honeydew;
         text-align: center;
         position: relative;
-        font-size: 18px;
         padding: 15px;
         display: flex;
         justify-content: center;
         align-content: center;
         align-items: center;
-    
-        /* top: 5px;
-        left: -3px; */
+        border-right: 2px solid #2c3636;
+
     }
+
+    .back2.dark {
+      background-color: none;
+      border-right: 2px solid #ecd2ea;
+    }
+
+    .back2.dark:hover {
+      border-right: 2px solid #ecd2ea;
+    }
+
     
     .back2:hover {
-        border-right: 2px solid;
+        border-right: 2px solid #2c3636;
+        background-color: #da5237;
+    }
 
-        background-color:lightgreen;
-        box-shadow: 5px 5px 5px rgb(163, 163, 163), -5px -5px -5px rgb(163, 163, 163);
+
+    .back2-leaves:hover {
+      background-color: #da5237;
     }
 
     
     body {
-        font-family: sans-serif;
+        background-color:#f0e4e2;
+        color: #2c3636;
+        font-family:'Hedvig Letters Sans', sans-serif;
+
         position: relative;
         margin: 0;
+        margin-bottom: 40px;
+        width: 100%;
     }
 
-    .color-button {
-        position: absolute;
-        top: 20px;
-        right: 20px;
+    .body-container {
+      display: flex;
+      justify-content: space-between;
+      align-content:first baseline;
     }
+
+    body.serif {
+      font-family: 'Lora', serif;
+    }
+    
+    body.open-dyslexic {
+     font-family: 'open dyslexic';
+    }
+
+    button {
+
+    background-color: rgb(36, 36, 36);
+      border: 1px solid white;
+      border-radius: 3px;
+      color: white;
+      padding: 5px 10px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      cursor: pointer;
+    }
+
+
+    button:hover {
+      box-shadow: 10px -7px 10px goldenrod;
+    }
+
 
     #close-button {
-        font-size: 16px;
+        position: absolute;
+        top: 5px;
+        right: 5px;
+        box-shadow: 1px 1px 1px grey;
+        width: 30px;
+        height: 30px;
+    }
+
+    .contact {
+      width: fit-content;
+      position: relative;
+      bottom: 12px; 
+
+      border: 1px solid;
+      padding: 20px;
+      border-radius: 100px;
+    }
+
+    .contact-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      bottom: 5px;
+    }
+
+    .contact:hover {
+      background-color: darkgoldenrod;
+    }
+    
+    .contact-leaves {
+      border-right: 2px solid;
+      position: relative;
+      width: fit-content;
+      padding-top: 10px;
+    }
+
+    .contact-leaves-link {
+      position: relative;
+      top: 5px;
+    }
+
+    .contact-leaves:hover {
+      background-color: darkgoldenrod;
     }
 
     .current-selected {
-      background-color: black;
-        color: white;
+      background-color: #2c3636;
+        color: #f0e4e2;
+        width: 50%;
+    }
+
+    .current-selected.dark {
+      background-color: #ecd2ea;
+      color: #2c3636;
+    }
+
+    .customize {
+      width: fit-content;
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      align-items: center;
+      position: absolute;
+      top: 15px;
+      gap: 50px;
+      right: 25px;
     }
 
     .dark {
-        background-color:rgb(30, 30, 30);
-        color:white;
+        background-color:#2c3636;
+        color:#e9c8e6;
       }
 
+      .dark-button {
+        position: relative; 
+        bottom: 1px; 
+      }
+
+      .dark-button-modal {
+        position: absolute;
+        bottom: 30px;
+        right: 40px;
+      }
+
+
     .description {
-        font-family: sans-serif;
-        font-size: 20px;
+        font-size: 1.2rem;
         margin: 0 20px 20px 20px;
         line-height: 1.5;
     }
+
 
     .draggable {
         cursor: grab;
@@ -73,52 +204,81 @@
 
       figcaption {
         text-align: center;
-        padding-top: 15px;
-        font-size: 18px;
+        padding-top: 5px;
+        font-size: 1.2rem;
     }
     
     .figcaption-with-icon {
         position: relative;
-        bottom: 20px;
+        bottom: 10px;
+
+    }
+
+    .font-selector {
+      text-align: right;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 5px;
     }
 
     .gallery {
         margin: 40px 0;
         width: 100%;
+        overflow: hidden;
+        position: relative;
+        bottom: 40px;
+
         display: flex;
         justify-content: space-evenly;
-        align-items:center;
+        align-items: flex-start;
         flex-wrap: wrap;
-        position: relative;
-        top: 50px; 
+        gap: 10px;
     }
 
-    .header {
-        background-color: aliceblue;
-        border-bottom: 2px solid;
-        width: 100vw;
-        height: 60px;
-
-        display: flex;
-        margin: 0;
-    }
 
     h1 {
-        font-family: sans-serif;
-        font-size: 45px;
+        font-size: 2.8rem;
         margin: 50px 20px 20px 20px;
         line-height: 1.25;
     }
+
+    h1.open-dyslexic {
+      font-size: 2.6rem;
+    }
+
       
     h2 {
-        background-color: blue;
-        border: 1px solid black;
-        color: white;
         border-radius: 2px;
         padding: 20px;
         text-align: center;
-        font-family: sans-serif;
-        font-size: 35px;
+        font-size: 2rem;
+    }
+
+
+    .header {
+      background-color: #d0d0d0;
+    
+      border-bottom: 2px solid #2c3636;
+      width: 100%;
+      height: 60px;
+
+      display: flex;
+      margin: 0;
+      position: absolute;
+      top: 0;
+  }
+
+  .header.dark {
+    background-color: #2c3636;
+    color: #ecd2ea;
+    border-bottom: 2px solid #ecd2ea;
+  }
+
+  .header-leaves {
+    position: fixed;
+    z-index: 200;
+    background-color: #f0e4e2;
     }
 
     .icon {
@@ -133,39 +293,102 @@
     }
 
     .icon:hover {
-      background-color: white;
-      padding: 0;
       border: none;
+      padding: 0;
     }
 
     .icon-explainer {
-        background-color: white;
-        border: 1px solid;
+        border-top: 2px solid;
+        border-right: 2px solid;
+       
         display: flex;
         flex-direction: row;
-        font-size: 20px;
+        justify-content: space-evenly;
+        font-size: 1.2rem;
     
-        width: fit-content;
+        width: 50%;
         height: fit-content;
         z-index: 1;
         gap: 5px;
-        position: relative;
-        top: 100px;
+        position: fixed;
+        bottom: 0;
+      left: 0;
+        padding-right: 27px;
     }
 
-    .image-container {
-        position: relative;
+    .icon-explainer.dark {
+      background-color: #2c3636;
     }
+
+    .icon-explainer.hide {
+      display: none;
+    }
+
+
+    .img-container:hover {
+      cursor: zoom-in;
+    }
+
 
     img {
         width: 420px;
         height: 300px;
     }
 
+
     img:hover {
-      background-color: lavender;
       padding: 5px;
+      border: 2px solid #2c3636;
+    }
+
+
+    img.dark:hover {
+      border: 2px solid #eeddec;
+    }
+
+
+    /* input[type=checkbox] {
+      display: none;
+    }
+
+
+    input[type=checkbox]:checked ~ label > img {
+      transform: scale(2);
+      cursor: zoom-out;
+    } */
+
+
+    label {
+      color: #2c3636;
+      
+    }
+
+
+    label.dark {
+      color: #e9c8e6;
+    }
+
+
+    .leaf-caption {
+      padding: 5px;
+    }
+
+
+    .leaf-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+
+    .leaf-container:hover {
       border: 2px solid;
+      padding: 5px;
+    }
+
+    .leaf-container img:hover {
+      border: none;
     }
 
     .leaf-grid {
@@ -179,11 +402,40 @@
     }
 
     .leaf-link {
-        width: fit-content;
+        position: relative;
+        z-index: 101;
+      }
 
+      .leaf-link-container {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        position: relative;
+        left: -10px;
+      }
+
+      .leaf-links-ui {
+        position: relative;
+        top: 60px;
+      }
+
+
+      .leaf-number {
         position: absolute;
-        top: 80px;
-        left: 35px;
+        top: 5px;
+        left: 5px;
+      }
+      
+
+      .left-side {
+        width: 50%;
+        height: 100%;
+        position: fixed;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        border-right: 2px solid;
       }
 
     li a {
@@ -191,20 +443,19 @@
       }
 
     .link-container {
+        border-bottom: 2px solid;
+        width: 100%;
+        height: fit-content;
         display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 20px;
-        position: relative; 
-        top: 97px;
+        position: relative;
+        top: -60px;
+  
+  
     }
 
     .main-container {
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        align-items: center;
-        align-content: center;
+        width: 100%;
+
     }
 
     .menu {
@@ -237,10 +488,12 @@
         justify-content: center;
         align-items: center;
         align-content: center;
+        position: absolute;
+        top: 0;
       }
 
+
     #popup-link {
-        font-family: sans-serif;
         background-color: white;
         border-radius: 40px;
         padding: 10px;
@@ -267,41 +520,117 @@
         z-index: 10;
         display: none;
       }
-      
-      summary {
-        font-family: sans-serif;
-        font-size: 30px;
-        padding: 10px;
+
+      .right-side {
+        width: 50%;
+        position: absolute;
+        right: 0;
+        top: 60px;
+     
+
       }
-      
-      summary:hover {
-        font-size:35px;
-        background-color: lightpink;
+
+
+      select {
+        background-color: none;
+        color: #2c3636;
+        border: 1px solid;
+        border-radius: 3px;
+        padding: 3px;
       }
+
+      select:hover {
+        background-color: white;
+      }
+
+      select.dark:hover {
+        background-color: white;
+        color: #2c3636;
+      }
+
+      .slider {
+        max-width: 122px;
+        text-align: center;
+        padding-top: 5px;
+      }
+
+      #slideshow-container {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        /* Add any other styling as needed */
+    }
+
+    .slideshow-content {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+  }
+      
       
       .switch-link {
-        display: block;
-        font-size: 35px;
-        font-family: sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+      }
+
+      .switch-link a {
+        color: #2c3636;
+        font-size: 2rem;
+      }
+
+      .switch-link.dark a {
+        color: #eeddec;
       }
       
       .switch-link:hover {
-        background-color: lightgreen;
-        padding: 20px;
-        border-radius: 5px;
-        font-size: 36px;
-        border: 2px solid;
+        background-color:#d0e3b1;
       }
 
-      .thisisawebsite {
+      .switch-link:hover a {
+        font-size: 2.15rem;
+      }
+
+      .switch-link.dark:hover a {
+        background-color: #d0e3b1;
+        color: #2c3636;
+        font-size: 2.15rem;
+      }
+
+
+      .text-size {
         position: relative;
-        width: fit-content;
-        padding: 0 30px 30px 30px;
+        top: 6px;
+        right: 50px;
+      }
+
+       .thisisawebsite {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+       
+    } 
     
-        position: relative;
-        top: 50px;
-        left: 20px;
-        /* box-shadow: 3px 3px 0px rgb(0, 0, 0), 10px 10px 40px rgb(20, 223, 13); */
+
+    .ui-horizontal-caption {
+      text-align: left;
+      width: 420px;
+      position: relative;
+      left: 5px;
+    }
+
+    .ui-vertical-caption {
+      text-align: left;
+      width: 270px;
     }
 
       ul {
@@ -309,15 +638,183 @@
         margin: 0;
         padding: 0;
       }
+
+      .under-contact-decorative {
+        position: relative;
+        bottom: 27px;
+      }
       
       .vertical {
           width: 270px;
           height: 350px;
       }
       
-      .x {
-          display: block;
-          position: absolute;
-          top: 5px;
-          right: 5px;
+
+      .x-index {
+        border: none;
+        position: absolute;
+        right: 4px;
       }
+
+      .x-index.dark {
+       background-color:#e9c8e6;
+       color: black;
+      }
+
+
+      /* LIGHTBOX STUFF  */
+
+      .row > .column {
+        padding: 0 8px;
+      }
+      
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+      
+      /* Create four equal columns that floats next to eachother */
+      .column {
+        float: left;
+        width: 25%;
+      }
+      
+      /* The Modal (background) */
+      .modal {
+        background-color: #f0e4e2;
+        display: none;
+        position: fixed;
+        z-index: 1;
+        padding-top: 100px;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+      }
+
+      .modal.dark {
+        background-color: #2c3636;
+      }
+      
+      /* Modal Content */
+      .modal-content {
+        position: relative;
+        margin: 0 auto;
+        padding: 0;
+        width: fit-content;
+        max-width: 1200px;
+      }
+      
+      /* The Close Button */
+      .close {
+        color: black;
+        border: 2px solid;
+        padding: 10px 20px;
+        position: absolute;
+        top: 10px;
+        right: 25px;
+        font-size: 35px;
+        font-weight: bold;
+        z-index: 300;
+      }
+
+      .close.dark {
+        background-color: #e9c8e6;
+      }
+      
+      .close:hover,
+      .close:focus {
+        background-color: goldenrod;
+        cursor: pointer;
+      }
+      
+      /* Hide the slides by default */
+      .mySlides {
+        display: none;
+      }
+      
+      /* Next & previous buttons */
+      .prev,
+      .next {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        padding: 16px;
+        margin-top: -50px;
+        color: black;
+        font-weight: bold;
+        font-size: 20px;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+        -webkit-user-select: none;
+      }
+
+      .prev {
+        left: -60px;
+      }
+      
+      /* Position the "next button" to the right */
+      .next {
+        right: -60px;
+      }
+      
+      /* On hover, add a black background color with a little bit see-through */
+      .prev:hover,
+      .next:hover {
+        background-color: rgba(0, 0, 0, 0.8);
+      }
+
+      .prev.dark, .next.dark {
+        color:  #e9c8e6;
+      }
+
+      .prev.dark:hover,
+      .next.dark:hover {
+        border: 2px solid #e9c8e6;
+        padding: 5px;
+      }
+      
+      
+      /* Caption text */
+      .caption-container {
+        text-align: center;
+     
+        padding: 2px 16px;
+        color: black;
+      }
+      
+      img.demo {
+        opacity: 0.6;
+      }
+      
+      .active,
+      .demo:hover {
+        opacity: 1;
+      }
+      
+      img.hover-shadow {
+        transition: 0.3s;
+      }
+      
+      .hover-shadow:hover {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      }
+
+      .modal-vertical {
+        width:530px; 
+        height: 670px;
+      }
+
+      .modal-horizontal {
+        width: 670px;
+        height: 560px;
+      }
+
+
+
+
+
+  

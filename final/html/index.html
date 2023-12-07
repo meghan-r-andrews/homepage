@@ -1,128 +1,225 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>FINAL</title>
+        <title>FINAL - home</title>
 
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <html lang="en">
             
         <link rel="stylesheet" href="../css/main.css">
         <link rel="icon" type="image/png" href="sunflower.png">
+        <link rel="stylesheet" href="https://use.typekit.net/nyd2wxw.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,200&family=Hedvig+Letters+Sans&family=Kumar+One&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lora&display=swap">
+
 
     </head>
     
     <body>
 
-        <div class="header">
+       
 
-            <a class= "back2" href="../../index.html">Back to homepage</a>
+    <div class="body-container">
 
-            <div class="color-button">
-                <button>dark mode</button>
-            </div>
-
-        </div>
-
-        <div class="leaf-link draggable">
-            <a href="../html/leaves-grid.html">
-                <img src="../pics/scans/02.png" alt="Autmn leaf with hues of bright orange and red" style="width:6%;height:6%;">
-            </a>
-        </div>
-
-
-        <!-- <div class="menu">
-            <details>
-                <summary>MENU</summary>
-                    <ul>
-
-                        <li><a href="../html/index.html">Identified plants</a></li>
-
-                        <li><a href="../html/unidentified.html">Unidentified plants</a></li>
-                        
-                        <li> <a href="../html/leaves-grid.html">Scans of autumn leaves</a> </li>
-                    </ul>
-            </details>
-        </div> -->
-
+        <div class="left-side">
+            
         <div class="main-container">
 
-       
-            <div class="thisisawebsite">
-                <h1>This is a website about plants<br> 
-                    <!-- <div class="found" style="font-size:30px;">found in Richmond, Virginia.</div> -->
-                </h1>
+            <div class="header">
 
-                <div class="description">
-                    <p>Here are some pictures of plants. <br> 
-                    All plants were found in Richmond, Virginia.  <br>
-                    I took pictures of them because I thought they were pretty.<br> 
-                    I'm learning how to identify them. <br> </p>
+                <a class= "back2" href="../../index.html">Back to homepage</a>
+
+                <div class="customize">
+
+                    <div class="font-selector">
+                        <label for="font-selector">Select font-type:</label><br>
+                         <select class="select-font-button" id="font-selector" autocomplete="off">
+                            <option selected="selected" value="sans-serif">sans serif</option>
+                            <option value="serif">serif</option>
+                            <option value="open-dyslexic">open dyslexic</option>
+                        </select>
+                    </div>
+
+                    <!--<div class="text-size">
+                            <label for="font-size">Adjust text size</label><br> 
+                                <div class="slidecontainer">
+                                    <input type="range" min="12" max="42" id="slider" class="slider">
+                                </div>
+                        </div> -->
+
+                    <div class="dark-button">
+                        <button>toggle dark mode</button>
+                     </div>
+
+                </div> <!-- customize -->
+
+            </div> <!--header-->
+
+
+            <div class="leaf-link-container">
+
+                <div class="leaf-link draggable" style="max-width: 70px;">
+                        <a href="../html/leaves-grid.html">
+                            <img src="../pics/scans/02.png" alt="Autumn leaf with hues of bright orange and red" style="width:100%;height:100%;">
+                        </a>
+                    </div>
+
+                    <div class="leaf-link draggable" style="max-width: 70px;">
+                        <a href="../html/leaves-grid.html">
+                            <img src="../pics/scans/04.png" alt="Autumn leaf with hues of bright yellow that melt into red" style="width:100%;height:100%;">
+                        </a>
+                    </div>
+
+                    <div class="leaf-link draggable" style="max-width: 90px;">
+                        <a href="../html/leaves-grid.html">
+                            <img src="../pics/scans/07.png" alt="Sugar maple leaf, with warm hues of yellow, orange and light green" style="width:100%;height:100%;">
+                        </a>
+                    </div>
+
+                    <div class="leaf-link draggable" style="max-width: 70px;">
+                        <a href="../html/leaves-grid.html">
+                            <img src="../pics/scans/08.png" alt="Small, bright yellow autumn leaf with a large splotch of maroond" style="width:100%;height:100%;">
+                        </a>
+                    </div>
+
+                    <div class="leaf-link draggable" style="max-width: 70px;">
+                        <a href="../html/leaves-grid.html">
+                            <img src="../pics/scans/10.png" alt="Small yellow tulip tree leaf, brown creeping inwards from the edges" style="width:100%;height:100%;">
+                        </a>
+                    </div>
+
+                    <div class="leaf-link draggable" style="max-width: 70px;">
+                        <a href="../html/leaves-grid.html">
+                            <img src="../pics/scans/14.png" alt="Star-shaped autumn leaf, mostly yellow-green with a lot of maroon speckles" style="width:100%;height:100%;">
+                        </a>
+                    </div>
+
+                    <div class="leaf-link draggable" style="max-width: 70px;">
+                        <a href="../html/leaves-grid.html">
+                            <img src="../pics/scans/17.png" alt="Autumn leaf with hues of bright orange and red" style="width:100%;height:100%;">
+                        </a>
+                    </div>
+
+                    <div class="leaf-link draggable" style="max-width: 70px;">
+                        <a href="../html/leaves-grid.html">
+                            <img src="../pics/scans/19.png" alt="Oak leaf consisting of mostly red hues that melt into green towards the center of the leaf" style="width:100%;height:100%;">
+                        </a>
+                    </div>
+
+            </div> <!--leaf-link container-->
+  
+
+            <div class="text-container">
+
+                <div class="thisisawebsite">
+
+                    <h1> <b>~ This is a website about plants ~</b> <br> 
+                    </h1>
+
+                    <div class="description">
+                        <p>Here are some plants that I encountered in Richmond, VA. <br> 
+                        I'm learning how to identify them. <br> <br>
+                        </p>
+                    </div>
+
+                <div class="contact-container">
+                    <p>. . . . . ///////////////////////////////////////////// . . . . .</p>
+             
+                    <div class="contact">
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSd48nbWchb9fCH46EupqrusnGliRvGRZzjfTNwJOtoCYPeLAw/viewform?usp=pp_url" target="blank" rel="noopener noreferrer">Help me identify / 
+                            Submit a correction </a>
+                    </div>
+
+                    <div class="under-contact-decorative">
+                        <p>* * * <><><><><><><><><><><><> * * *</p>
+                    </div>
+
                 </div>
-            </div>
+                
 
-     
+                </div> <!--thisisawebsite-->
+            </div> <!--text-container?-->
 
-
-            <div class="link-container">
-                <h2 class="current-selected">Identified</h2> 
-                <a class="switch-link" href="../html/unidentified.html">Unidentified</a>
-            </div>
 
             <div class="icon-explainer">
+
                 <div class="native">
-                    <img class="icon" src="../pics/native-plant-icon.png" alt="Small green heart">
-                    <p style="color:green;"> = native to this area </p>
+                    <img class="icon" src="../pics/native-plant-icon-index.png" alt="Small green heart">
+                    <p> = native to this area </p>
                 </div>
 
                 <div class="invasive">
-                    <img class="icon" src="../pics/invasive-plants-icon.png" alt="Small red broken heart">
-                    <p style="color: rgb(208, 0, 0);"> = invasive of particular concern </p>
+                    <img class="icon" src="../pics/invasive-plants-icon-index.png" alt="Small red broken heart">
+                    <p> = invasive of particular concern </p>
                 </div>
-            </div>
 
+                 <button id="close-button" class="x-index">&times;</button>
+
+            </div> <!-- icon-explainer -->
+
+        </div> <!-- main container? messes things up when deleted -->
+
+     </div>  <!--left side  -->
+
+
+    <div class="right-side">
+
+
+        <div class="link-container">
+            <div class="current-selected">
+                <h2>Identified</h2> 
+            </div>
+            
+            <div class="switch-link">
+                <a href="../html/unidentified.html">Unidentified</a>
+            </div>
         </div>
 
 
         <div class="gallery">
 
-            <figure>
-                <img class="vertical" src="../pics/identified/african-daisy.jpg" alt="Singular flower with white petals and a purple center amongst a green, blurry background.">
-                    <figcaption>African Daisy
-                    </ficaption>
-            </figure>
+            <div class="img-container">
+                    <figure>
+                        <img class="vertical" src="../pics/identified/african-daisy.jpg" alt="Singular flower with white petals and a purple center." id="zoomedImage" onclick="openModal();currentSlide(1)">
+                            <figcaption>African Daisy
+                            </ficaption>
+                    </figure>   
+            </div>
 
+        
+            <figure class="pic-w-icon img-container">
 
-        <div class="image-container">
-            <figure class="pic-w-icon">
+                <!-- <a href="#" id="popup-link" class="see-more">See more</a>  -->
 
-                <a href="#" id="popup-link" class="see-more">See more</a> 
-
-                <img src="../pics/identified/american-beautyberry.JPG" alt="Shrub with small green leaves and bright purple berries.">
+                <img src="../pics/identified/american-beautyberry.JPG" alt="Shrub with small green leaves and bright purple berries." id="zoomedImage" onclick="openModal();currentSlide(2)">
                     <figcaption class="figcaption-with-icon">American Beautyberry
                         <img class="icon" src="../pics/native-plant-icon.png" alt="Small green heart" >
                     </ficaption>
 
-                    <div id="popup-window" class="popup-container draggable">
+                    <!-- <div id="popup-window" class="popup-container draggable">
 
                         <p>More pictures of American Beautyberry</p>
 
-                        <button id="close-button" class="x">X</button>
+                        <button id="close-button" class="x">&times;</button>
 
                         <img src="../pics/identified/more-pics/american-beautyberry/american-beautyberry-2.JPG" alt="Close-up shot of a few American Beautyberry branches, with bright purple berries and green leaves that are starting to brown.">
 
                         <img class="vertical" src="../pics/identified/more-pics/american-beautyberry/american-beautyberry-3.JPG" alt="3 small American Beautyberry shrubs planted amongst the side of a house.">
-<!-- 
+
                         <img class="vertical" src="../pics/identified/more-pics/american-beautyberry/american-beautyberry-4.JPG" alt="A large American Beautyberry shrub photographed in late autumn, with minimal leaves left and bright purple berries. "><br> -->
 
-                        <button id="close-button">Close</button>
-                      </div>
+                        <!-- <button id="close-button">Close</button>
+                      </div>  -->
             </figure>
-        </div>
+       
           
 
           <div class="image-container">
             <figure class="pic-w-icon">
-                <img src="../pics/identified/american-mountain-ash.JPG" alt="A medium-sized tree with bright red berries and green, feather-like leaves.">
+                <img class="img-container" src="../pics/identified/american-mountain-ash.JPG" alt="A medium-sized tree with bright red berries and green, feather-like leaves." onclick="openModal();currentSlide(3)">
                     <figcaption class="figcaption-with-icon">American Mountain Ash
                         <img class="icon" src="../pics/native-plant-icon.png" alt="Small green heart" >
                     </ficaption>
@@ -131,7 +228,7 @@
 
 
             <figure class="pic-w-icon">
-                <img class="vertical" src="../pics/identified/american-pokeweed.jpg" alt="The bright fuschia stems of a group of American Pokeweeds amongst dead grass.">
+                <img class="vertical img-container" src="../pics/identified/american-pokeweed.jpg" alt="The bright fuschia stems of a group of American Pokeweeds amongst dead grass." onclick="openModal();currentSlide(4)">
                     <figcaption class="figcaption-with-icon">American Pokeweed
                         <img class="icon" src="../pics/native-plant-icon.png" alt="Small green heart" >
                     </ficaption>
@@ -139,7 +236,7 @@
 
 
             <figure class="pic-w-icon">
-                <img class="vertical" src="../pics/identified/american-waterwillow.jpg" alt="A spread of the same green, aquatic, grassy plant. It has small, light purple flowers.">
+                <img class="vertical img-container" src="../pics/identified/american-waterwillow.jpg" alt="A spread of the same green, aquatic, grassy plant. It has small, light purple flowers." onclick="openModal();currentSlide(5)">
                     <figcaption class="figcaption-with-icon">American Water Willow
                         <img class="icon" src="../pics/native-plant-icon.png" alt="Small green heart" >
                     </ficaption>
@@ -147,7 +244,7 @@
 
 
             <figure class="pic-w-icon">
-                <img src="../pics/identified/amur-honeysuckle.JPG" alt="Thin branch of a tree, peppered with vibrant, small red berries and small, green, tear shaped leaves. ">
+                <img class="img-container" src="../pics/identified/amur-honeysuckle.JPG" alt="Thin branch of a tree, peppered with vibrant, small red berries and small, green, tear shaped leaves." onclick="openModal();currentSlide(6)">
                     <figcaption class="figcaption-with-icon">Amur Honeysuckle Tree
                         <img class="icon" src="../pics/invasive-plants-icon.png" alt="Small red broken heart">
                     </ficaption>
@@ -155,21 +252,21 @@
 
 
             <figure class="pic-w-icon">
-                <img src="../pics/identified/bitter-sneezeweed.jpg" alt="Small, bright yellow wildflowers amongst a bed of green grass.   ">
+                <img class="img-container" src="../pics/identified/bitter-sneezeweed.jpg" alt="Small, bright yellow wildflowers amongst a bed of green grass." onclick="openModal();currentSlide(7)">
                     <figcaption class="figcaption-with-icon">Bitter Sneezeweed
                         <img class="icon" src="../pics/native-plant-icon.png" alt="Small green heart" >
                     </ficaption>
             </figure>
 
             <figure>
-                <img class="vertical" src="../pics/identified/blackberry.jpg" alt="Bush with green leaves, small, pale pink flowers, and a  green, ripening blackberry.">
+                <img class="vertical img-container" src="../pics/identified/blackberry.jpg" alt="Bush with green leaves, small, pale pink flowers, and a  green, ripening blackberry." onclick="openModal();currentSlide(8)">
                     <figcaption>Blackberry Bush
                     </ficaption>
             </figure>
 
 
             <figure class="pic-w-icon">
-                <img class="vertical" src="../pics/identified/blue-mist-flower.jpg" alt="Small group of light,purple flowers with triangular, green leaves on the stems.">
+                <img class="vertical img-container" src="../pics/identified/blue-mist-flower.jpg" alt="Small group of light,purple flowers with triangular, green leaves on the stems." onclick="openModal();currentSlide(9)">
                     <figcaption class="figcaption-with-icon">Blue Mistflower
                         <img class="icon" src="../pics/native-plant-icon.png" alt="Small green heart" >
                     </ficaption>
@@ -177,21 +274,21 @@
 
 
             <figure>
-                <img class="vertical" src="../pics/identified/camelias.jpg" alt="Small tree with dark green, waxy leaves and big, bright pink flowers.">
+                <img class="vertical img-container" src="../pics/identified/camelias.jpg" alt="Small tree with dark green, waxy leaves and big, bright pink flowers." onclick="openModal();currentSlide(10)">
                     <figcaption>Camellias
                     </ficaption>
             </figure>
 
 
             <figure class="pic-w-icon">
-                <img class="vertical" src="../pics/identified/goldenrod.jpg" alt="A group of tall, bright yellow flowers. Each flower is several feet tall with long stems containing short, opposite growing leaves.">
+                <img class="vertical img-container" src="../pics/identified/goldenrod.jpg" alt="A group of bright yellow flowers, standing several feet tall." onclick="openModal();currentSlide(11)">
                     <figcaption class="figcaption-with-icon">Canadian Goldenrod
                         <img class="icon" src="../pics/native-plant-icon.png" alt="Small green heart" >
             </figure>
 
             
             <figure class="pic-w-icon">
-                <img src="../pics/identified/chinese-privet.JPG" alt="">
+                <img class="img-container"src="../pics/identified/chinese-privet.JPG" alt="Tree with thin branches, small dark green waxy leaves and many dark blue berries growing in clusters." onclick="openModal();currentSlide(12)">
                     <figcaption class="figcaption-with-icon">Chinese Privet
                         <img class="icon" src="../pics/invasive-plants-icon.png" alt="Small red broken heart">
                     </ficaption>
@@ -199,27 +296,27 @@
 
 
             <figure>
-                <img class="vertical" src="../pics/identified/dahlia.jpg" alt="">
+                <img class="vertical img-container" src="../pics/identified/dahlia.jpg" alt="Very pale pink flower with many soft streaks of darker pink." onclick="openModal();currentSlide(13)">
                     <figcaption>Dahlia
                     </ficaption>
             </figure>
 
 
             <figure>
-                <img class="vertical" src="../pics/identified/fern-moss.jpg" alt="">
+                <img class="vertical img-container" src="../pics/identified/fern-moss.jpg" alt="Close-up shot of green fern moss." onclick="openModal();currentSlide(14)">
                     <figcaption>Fern Moss
                     </ficaption>
             </figure>
 
             <figure>
-                <img class="vertical" src="../pics/identified/fernleaf-yarrow.jpg" alt="">
+                <img class="vertical img-container" src="../pics/identified/fernleaf-yarrow.jpg" alt="Yellow flowers growing on long stems with lacy green leaves." onclick="openModal();currentSlide(15)">
                     <figcaption>Fernleaf Yarrow
                     </ficaption>
             </figure>
 
 
             <figure class="pic-w-icon">
-                <img class="vertical" src="../pics/identified/golden-tickseed.jpg" alt="">
+                <img class="vertical img-container" src="../pics/identified/golden-tickseed.jpg" alt="Yellow flowers with dark red centers." onclick="openModal();currentSlide(16)">
                     <figcaption class="figcaption-with-icon">Golden Tickseed
                         <img class="icon" src="../pics/native-plant-icon.png" alt="Small green heart" >
                     </ficaption>
@@ -227,51 +324,56 @@
 
 
             <figure>
-                <img class="vertical" src="../pics/identified/hyacinth-bean.jpg" alt="">
+                <img class="vertical img-container" src="../pics/identified/hyacinth-bean.jpg" alt="Vibrant, purple beans hanging from a thin, purple stem amongst green leaves." onclick="openModal();currentSlide(17)">
                     <figcaption>Hyacinth Bean
                     </ficaption>
             </figure>
 
 
             <figure>
-                <img src="../pics/identified/japanese-maple.JPG" alt="">
+                <img class="img-container" src="../pics/identified/japanese-maple.JPG" alt="Soft orange leaves of a Japanese Maple tree." onclick="openModal();currentSlide(18)">
                     <figcaption>Japanese Maple
                     </ficaption>
             </figure>
 
 
             <figure>
-                <img src="../pics/identified/lantanas.jpg" alt="">
+                <img class="img-container" src="../pics/identified/lantanas.jpg" alt="Close-up shot of small pink and yellow flowers amongst green leaves." onclick="openModal();currentSlide(19)">
                     <figcaption>Lantanas
                     </ficaption>
             </figure>
 
 
-            <figure>
-                <img src="../pics/identified/marigolds.JPG" alt="">
-                    <figcaption>Marigolds
-                    </ficaption>
-            </figure>
-
-
             <figure class="pic-w-icon">
-                <img src="../pics/identified/new-england-aster.JPG" alt="">
+                <img class="img-container" src="../pics/identified/new-england-aster.JPG" alt="A group of purple flowers, some with yellow centers, some with brown. A bee rests on one of the flowers." onclick="openModal();currentSlide(20)">
                     <figcaption class="figcaption-with-icon">New England Aster
                         <img class="icon" src="../pics/native-plant-icon.png" alt="Small green heart" >
                     </ficaption>
             </figure>
 
-
-            <figure class="pic-w-icon">
-                <img src="../pics/identified/passionflower.JPG" alt="">
-                    <figcaption class="figcaption-with-icon">Passionflower
-                        <img class="icon" src="../pics/native-plant-icon.png" alt="Small green heart" >
+            <figure>
+                <img class="img-container" src="../pics/identified/marigolds.JPG" alt="A singular bright orange flower in focus with several blurry, orange flowers amongst the mostly green background." onclick="openModal();currentSlide(21)">
+                    <figcaption>Orange Cosmos
                     </ficaption>
             </figure>
 
 
             <figure class="pic-w-icon">
-                <img class="vertical" src="../pics/identified/porcelain-berry.jpg" alt="">
+                <img class="img-container" src="../pics/identified/passionflower.JPG" alt="Tropical-looking flower with white petals and an extravagant light and dark purple, white and soft-yellow center." onclick="openModal();currentSlide(22)">
+                    <figcaption class="figcaption-with-icon">Passionflower
+                        <img class="icon" src="../pics/native-plant-icon.png" alt="Small green heart" >
+                    </ficaption>
+            </figure>
+
+            <figure>
+                <img class="vertical img-container" src="../pics/identified/paw-paw.JPG" alt="Group of small trees with large, tear-shaped leaves." onclick="openModal();currentSlide(23)">
+                    <figcaption>Pawpaw Tree
+                    </ficaption>
+            </figure>
+
+
+            <figure class="pic-w-icon">
+                <img class="vertical img-container" src="../pics/identified/porcelain-berry.jpg" alt="Colorful, cool-toned berries in shades of blue and purple growing from a vine with green leaves." onclick="openModal();currentSlide(24)">
                     <figcaption class="figcaption-with-icon">Porcelain berry
                         <img class="icon" src="../pics/invasive-plants-icon.png" alt="Small red broken heart">
                     </ficaption>
@@ -279,7 +381,7 @@
 
 
             <figure class="pic-w-icon">
-                <img class="vertical" src="../pics/identified/purple-love-grass.jpg" alt="">
+                <img class="vertical img-container" src="../pics/identified/purple-love-grass.jpg" alt="Delicate, thin rosy-purple grass grows in a wooded area." onclick="openModal();currentSlide(25)">
                     <figcaption class="figcaption-with-icon">Purple Love Grass
                         <img class="icon" src="../pics/native-plant-icon.png" alt="Small green heart" >
                     </ficaption>
@@ -287,35 +389,41 @@
 
 
             <figure>
-                <img class="vertical" src="../pics/identified/red-spider-lily.jpg" alt="">
+                <img class="vertical img-container" src="../pics/identified/red-spider-lily.jpg" alt="Extravagant, bright red flowers with many long, thin petals grow on the edge of a garden." onclick="openModal();currentSlide(26)">
                     <figcaption>Red Spider Lily
                     </ficaption>
             </figure>
 
 
             <figure>
-                <img class="vertical" src="../pics/identified/rosemary.JPG" alt="">
+                <img class="vertical img-container" src="../pics/identified/rosemary.JPG" alt="A rosemary bush with light purple flowers growing on some branches." onclick="openModal();currentSlide(27)">
                     <figcaption>Rosemary
                     </ficaption>
             </figure>
 
 
             <figure class="pic-w-icon">
-                <img class="vertical" src="../pics/identified/sassafras.jpg" alt="">
-                    <figcaption class="figcaption-with-icon">Sassafrass Tree
+                <img class="vertical img-container" src="../pics/identified/sassafras.jpg" alt="A tiny, young sassafras tree with just 4 leaves standing at just a few inches peeks out through some dead, brown leaves." onclick="openModal();currentSlide(28)">
+                    <figcaption class="figcaption-with-icon">Sassafras Tree
                         <img class="icon" src="../pics/native-plant-icon.png" alt="Small green heart" >
                     </ficaption>
             </figure>
 
             <figure>
-                <img class="vertical" src="../pics/identified/snapdragon.jpg" alt="">
+                <img class="vertical img-container" src="../pics/identified/snapdragon.jpg" alt="Small, delicate flowers with petals that have hues of pink and yellow growing in a window box planter." onclick="openModal();currentSlide(29)">
                     <figcaption>Snapdragon
+                    </ficaption>
+            </figure>
+
+            <figure>
+                <img class="vertical img-container" src="../pics/identified/staghorn-sumac.jpg" alt="Small tree with short, bright red, tearp-shaped leaves and smooth, mauve bark grows in a wooded area." onclick="openModal();currentSlide(30)">
+                    <figcaption>Staghorn Sumac
                     </ficaption>
             </figure>
 
 
             <figure class="pic-w-icon">
-                <img src="../pics/identified/clemantis.JPG" alt="">
+                <img class="img-container" src="../pics/identified/clemantis.JPG" alt="Many small, delicate white flowers grow on a thin vine." onclick="openModal();currentSlide(31)">
                     <figcaption class="figcaption-with-icon">Sweet Autumn Clematis
                         <img class="icon" src="../pics/invasive-plants-icon.png" alt="Small red broken heart">
                     </ficaption>
@@ -323,7 +431,7 @@
 
 
             <figure class="pic-w-icon">
-                <img class="vertical" src="../pics/identified/trumpetflower.jpg" alt="">
+                <img class="vertical img-container" src="../pics/identified/trumpetflower.jpg" alt="2 bright red flowers shaped like trumpets grow on a vine amongst many green plants in a wooded area." onclick="openModal();currentSlide(32)">
                     <figcaption class="figcaption-with-icon">Trumpet Vine
                         <img class="icon" src="../pics/native-plant-icon.png" alt="Small green heart" >
                     </ficaption>
@@ -331,7 +439,7 @@
 
 
             <figure class="pic-w-icon">
-                <img src="../pics/identified/tulip-poplar.JPG" alt="">
+                <img class="img-container" src="../pics/identified/tulip-poplar.JPG" alt="A group of around 6 leaves, some green, some yellow and brown, grow on a thin branch with the tree they belong to hovering in the background." onclick="openModal();currentSlide(33)">
                     <figcaption class="figcaption-with-icon">Tulip Poplar Tree
                         <img class="icon" src="../pics/native-plant-icon.png" alt="Small green heart" >
                     </ficaption>
@@ -339,7 +447,7 @@
 
 
             <figure class="pic-w-icon">
-                <img src="../pics/identified/yellow-jessamine.JPG" alt="">
+                <img class="img-container" src="../pics/identified/yellow-jessamine.JPG" alt="2 small, yellow flowers grow on a thin, dark purple vine amongst thin, dark green, waxy leaves." onclick="openModal();currentSlide(34)">
                     <figcaption class="figcaption-with-icon">Yellow Jessamine
                         <img class="icon" src="../pics/native-plant-icon.png" alt="Small green heart" >
                     </ficaption>
@@ -347,7 +455,7 @@
 
 
             <figure class="pic-w-icon">
-                <img class="vertical" src="../pics/identified/wild-potato-vine.jpg" alt="">
+                <img class="vertical img-container" src="../pics/identified/wild-potato-vine.jpg" alt="A large white flower with a small pop of purple at the center grows on a vine amongst greenery." onclick="openModal();currentSlide(35)">
                     <figcaption class="figcaption-with-icon">Wild Potato Vine
                         <img class="icon" src="../pics/native-plant-icon.png" alt="Small green heart" >
                     </ficaption>
@@ -355,10 +463,10 @@
 
 
             <figure>
-                <img src="../pics/identified/willow.JPG" alt="">
+                <img class="img-container" src="../pics/identified/willow.JPG" alt="A willow tree with long, droopping,leaves photographed from below." onclick="openModal();currentSlide(36)">
                     <figcaption>Willow Tree
                     </ficaption>
-            </figure>
+                </figure>
 
 
             <!-- <figure>
@@ -369,7 +477,221 @@
 
         </div>
 
-        <script>
+    </div>
+
+</div>
+
+<!-- modal/lightbox-->
+
+<div id="myModal" class="modal">
+
+    <span class="close cursor" onclick="closeModal()">&times;</span>
+    <div class="modal-content">
+
+    <div class="mySlides">
+      <img class="modal-vertical" src="../pics/identified/african-daisy.jpg" alt="Singular flower with white petals and a purple center.">
+      <figcaption>African Daisy</figcaption>
+    </div>
+
+    <div class="mySlides">
+      <img class="modal-horizontal"src="../pics/identified/american-beautyberry.JPG" alt="Shrub with small green leaves and bright purple berries." style="width:100%">
+      <figcaption>American Beautyberry</figcaption>
+    </div>
+
+    <div class="mySlides">
+      <img class="modal-horizontal" src="../pics/identified/american-mountain-ash.JPG" alt="A medium-sized tree with bright red berries and green, feather-like leaves." style="width:100%">
+      <figcaption>American Mountain Ash</figcaption>
+    </div>
+
+    <div class="mySlides">
+      <img class="modal-vertical" src="../pics/identified/american-pokeweed.jpg" alt="The bright fuschia stems of a group of American Pokeweeds amongst dead grass."  style="width:100%">
+      <figcaption>American Pokeweed</figcaption>
+    </div>
+
+    <div class="mySlides">
+        <img class="modal-vertical" src="../pics/identified/american-waterwillow.jpg" alt="A spread of the same green, aquatic, grassy plant. It has small, light purple flowers." alt="The bright fuschia stems of a group of American Pokeweeds amongst dead grass."  style="width:100%">
+        <figcaption>American Water Willow</figcaption>
+    </div>
+
+    <div class="mySlides">
+        <img class="modal-horizontal"  src="../pics/identified/amur-honeysuckle.JPG" alt="Thin branch of a tree, peppered with vibrant, small red berries and small, green, tear shaped leaves." style="width:100%">
+        <figcaption>Amur Honeysuckle</figcaption>
+    </div>
+
+    <div class="mySlides">
+        <img class="modal-horizontal" src="../pics/identified/bitter-sneezeweed.jpg" alt="Small, bright yellow wildflowers amongst a bed of green grass." style="width:100%">
+        <figcaption>Bitter Sneezeweed</figcaption>
+    </div>
+
+    <div class="mySlides">
+        <img class="modal-vertical" src="../pics/identified/blackberry.jpg" alt="Bush with green leaves, small, pale pink flowers, and a  green, ripening blackberry." style="width:100%">
+        <figcaption>Blackberry Bush</figcaption>
+    </div>
+
+    <div class="mySlides">
+        <img class="modal-vertical" src="../pics/identified/blue-mist-flower.jpg" alt="Small group of light,purple flowers with triangular, green leaves on the stems." style="width:100%">
+        <figcaption>Blue Mistflower</figcaption>
+    </div>
+
+    <div class="mySlides">
+        <img class="modal-vertical" src="../pics/identified/camelias.jpg" alt="Small tree with dark green, waxy leaves and big, bright pink flowers." style="width:100%">
+        <figcaption>Camelias</figcaption>
+    </div>
+
+    <div class="mySlides">
+        <img class="modal-vertical" src="../pics/identified/goldenrod.jpg" alt="A group of bright yellow flowers, standing several feet tall." style="width:100%">
+        <figcaption>Canadian Goldenrod</figcaption>
+    </div>
+
+    <div class="mySlides">
+        <img class="modal-horizontal" src="../pics/identified/chinese-privet.JPG" alt="Tree with thin branches, small dark green waxy leaves and many dark blue berries growing in clusters." style="width:100%">
+        <figcaption>Chinese Privet</figcaption>
+    </div>
+
+    <div class="mySlides">
+        <img class="modal-vertical" src="../pics/identified/dahlia.jpg" alt="Very pale pink flower with many soft streaks of darker pink." style="width:100%">
+        <figcaption>Dahlia</figcaption>
+    </div>
+
+    <div class="mySlides">
+        <img class="modal-vertical" src="../pics/identified/fern-moss.jpg" alt="Close-up shot of green fern moss." style="width:100%">
+        <figcaption>Fern Moss</figcaption>
+    </div>
+
+    <div class="mySlides">
+        <img class="modal-vertical" src="../pics/identified/fernleaf-yarrow.jpg" alt="Yellow flowers growing on long stems with lacy green leaves." style="width:100%">
+        <figcaption>Fernleaf Yarrow</figcaption>
+    </div>
+
+    <div class="mySlides">
+        <img class="modal-vertical" src="../pics/identified/golden-tickseed.jpg" alt="Yellow flowers with dark red centers." style="width:100%">
+        <figcaption>Golden Tickseed</figcaption>
+    </div>
+
+    <div class="mySlides">
+        <img class="modal-vertical" src="../pics/identified/hyacinth-bean.jpg" alt="Vibrant, purple beans hanging from a thin, purple stem amongst green leaves." style="width:100%">
+        <figcaption>Hyacinth Bean</figcaption>
+    </div>
+
+    <div class="mySlides">
+        <img class="modal-horizontal" src="../pics/identified/japanese-maple.JPG" alt="Soft orange leaves of a Japanese Maple tree." style="width:100%">
+        <figcaption>Japanese Maple</figcaption>
+    </div>
+
+    <div class="mySlides">
+        <img class="modal-horizontal" src="../pics/identified/lantanas.jpg" alt="Close-up shot of small pink and yellow flowers amongst green leaves." style="width:100%">
+        <figcaption>Lantanas</figcaption>
+    </div>
+
+    <div class="mySlides">
+        <img class="modal-horizontal" src="../pics/identified/new-england-aster.JPG" alt="A group of purple flowers, some with yellow centers, some with brown. A bee rests on one of the flowers." style="width:100%">
+        <figcaption>New England Aster</figcaption>
+    </div>
+
+    <div class="mySlides">
+        <img class="modal-horizontal" src="../pics/identified/marigolds.JPG" alt="A singular bright orange flower in focus with several blurry, orange flowers amongst the mostly green background." style="width:100%">
+        <figcaption>Orange Cosmos</figcaption>
+    </div>
+
+    <div class="mySlides">
+        <img class="modal-horizontal" src="../pics/identified/passionflower.JPG" alt="Tropical-looking flower with white petals and an extravagant light and dark purple, white and pale yellow center." style="width:100%">
+        <figcaption>Passionflower</figcaption>
+    </div>
+
+    <div class="mySlides">
+        <img class="modal-vertical" src="../pics/identified/paw-paw.JPG" alt="Group of small trees with large, tear-shaped leaves." style="width:100%">
+        <figcaption>Pawpaw tree</figcaption>
+    </div>
+
+    <div class="mySlides">
+        <img class="modal-vertical" src="../pics/identified/porcelain-berry.jpg" alt="Colorful, cool-toned berries in shades of blue and purple growing from a vine with green leaves." style="width:100%">
+        <figcaption>Porcelain berry</figcaption>
+    </div>
+
+    <div class="mySlides">
+        <img class="modal-vertical" src="../pics/identified/purple-love-grass.jpg" alt="Delicate, thin rosy-purple grass grows in a wooded area." style="width:100%">
+        <figcaption>Purple Love Grass</figcaption>
+    </div>
+
+    <div class="mySlides">
+        <img class="modal-vertical" src="../pics/identified/red-spider-lily.jpg" alt="Extravagant, bright red flowers with many long, thin petals grow on the edge of a garden."  style="width:100%">
+        <figcaption>Red Spider Lilly</figcaption>
+    </div>
+
+    <div class="mySlides">
+        <img class="modal-vertical" src="../pics/identified/rosemary.JPG" alt="A rosemary bush with light purple flowers growing on some branches." style="width:100%">
+        <figcaption>Rosemary</figcaption>
+    </div>
+
+    <div class="mySlides">
+        <img class="modal-vertical" src="../pics/identified/sassafras.jpg" alt="A tiny, young sassafras tree with 4 bright yellow leaves peeks out through some dead, brown leaves." style="width:100%">
+        <figcaption>Sassafras Tree</figcaption>
+    </div>
+
+    <div class="mySlides">
+        <img class="modal-vertical" src="../pics/identified/snapdragon.jpg" alt="Small, delicate flowers with petals that have hues of pink and yellow growing in a window box planter."style="width:100%">
+        <figcaption>Snapdragon</figcaption>
+    </div>
+
+    <div class="mySlides">
+        <img class="modal-vertical" src="../pics/identified/staghorn-sumac.jpg" alt="Small tree with short, bright red, tearp-shaped leaves and smooth, mauve bark grows in a wooded area." style="width:100%">
+        <figcaption>Staghorn Sumac</figcaption>
+    </div>
+
+    <div class="mySlides">
+        <img class="modal-horizontal" src="../pics/identified/clemantis.JPG" alt="Many small, delicate white flowers grow on a thin vine." style="width:100%">
+        <figcaption>Sweet Autumn Clemantis</figcaption>
+    </div>
+
+    <div class="mySlides">
+        <img class="modal-vertical" src="../pics/identified/trumpetflower.jpg" alt="2 bright red flowers shaped like trumpets grow on a vine amongst many green plants in a wooded area." style="width:100%">
+        <figcaption>Trumpet Vine</figcaption>
+    </div>
+
+    <div class="mySlides">
+        <img class="modal-horizontal" src="../pics/identified/tulip-poplar.JPG" alt="A group of around 6 leaves, some green, some yellow and brown, grow on a thin branch with the tree they belong to hovering in the background." style="width:100%">
+        <figcaption>Tulip Poplar Tree</figcaption>
+    </div>
+
+    <div class="mySlides">
+        <img class="modal-horizontal" src="../pics/identified/yellow-jessamine.JPG" alt="2 small, yellow flowers grow on a thin, dark purple vine amongst thin, dark green, waxy leaves." style="width:100%">
+        <figcaption>Yellow Jessamine</figcaption>
+    </div>
+
+    <div class="mySlides">
+        <img class="modal-vertical" src="../pics/identified/wild-potato-vine.jpg" alt="A large white flower with a small pop of purple at the center grows on a vine amongst greenery." style="width:100%">
+        <figcaption>Wild Potato Vine</figcaption>
+    </div>
+
+    <div class="mySlides">
+        <img class="modal-horizontal" src="../pics/identified/willow.JPG" alt="A willow tree with long, droopping,leaves photographed from below." style="width:100%">
+        <figcaption>Willow Tree</figcaption>
+    </div>
+
+    
+
+
+
+
+
+    
+
+    <!-- Next/previous controls -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <!-- Caption text -->
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+
+</div>
+
+        <script src="../javascript/jquery-3.7.1.min.js"></script>
+        <script src="../javascript/jquery-ui.min.js"></script>
+        <script src="../javascript/scripts.js"></script>
+
+        <!-- <script>
             // Get the elements by their ID
             var popupLink = document.getElementById("popup-link");
             var popupWindow = document.getElementById("popup-window");
@@ -385,12 +707,50 @@
             closeButton.addEventListener("click", function() {
               popupWindow.style.display = "none";
             });
+          </script>   -->
 
-          </script>  
-
-            <script src="../javascript/jquery-3.7.1.min.js"></script>
-            <script src="../javascript/jquery-ui.min.js"></script>
-            <script src="../javascript/scripts.js"></script>
+          <script>
+            // Open the Modal
+            function openModal() {
+              document.getElementById("myModal").style.display = "block";
+            }
+            
+            // Close the Modal
+            function closeModal() {
+              document.getElementById("myModal").style.display = "none";
+            }
+            
+            var slideIndex = 1;
+            showSlides(slideIndex);
+            
+            // Next/previous controls
+            function plusSlides(n) {
+              showSlides(slideIndex += n);
+            }
+            
+            // Thumbnail image controls
+            function currentSlide(n) {
+              showSlides(slideIndex = n);
+            }
+            
+            function showSlides(n) {
+              var i;
+              var slides = document.getElementsByClassName("mySlides");
+              var dots = document.getElementsByClassName("demo");
+              var captionText = document.getElementById("caption");
+              if (n > slides.length) {slideIndex = 1}
+              if (n < 1) {slideIndex = slides.length}
+              for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+              }
+              for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex-1].style.display = "block";
+              dots[slideIndex-1].className += " active";
+              captionText.innerHTML = dots[slideIndex-1].alt;
+            }
+            </script>
 
     </body>
 </html>

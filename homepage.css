@@ -36,11 +36,13 @@
         align-content: space-between;
         flex-basis: auto;
         column-gap: 100px;
+        position: relative;
+        top: 40px;
     }
 
     h1 {
         color: rgb(30, 11, 98);
-        font-family: "Kumar One";
+        font-family: 'Kumar One', serif;
         font-size: 50px;
         text-align: center;
         text-decoration: underline;

@@ -36,8 +36,6 @@ $(".color-button").click(
     }
   );
 
-
-
   $(".generatePerson").click(
     function(){
       $(".radio-btn").toggleClass("revealPerson")
@@ -50,11 +48,14 @@ $('input').on('change', function () {
   $('span').html(v);
 });
 
-$("#fs").change(function() {
-  //alert($(this).val());
-  $('.changeMe').css("font-family", $(this).val());
-
+$("#font-selector").change(function() {
+  // alert($(this).val());
+//   $('.changeMe').css("font-family", $(this).val());
+$("body").removeClass();
+$("body").addClass($(this).val());
 });
+
+
 
 $(".generateAnimal").click(
   function(){
