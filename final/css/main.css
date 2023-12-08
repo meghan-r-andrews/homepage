@@ -628,6 +628,12 @@
       left: 5px;
     }
 
+    .ui-number {
+      position: relative;
+      top: 0;
+      left: -20px;
+    }
+
     .ui-vertical-caption {
       text-align: left;
       width: 270px;
@@ -701,6 +707,7 @@
       /* Modal Content */
       .modal-content {
         position: relative;
+        bottom: 40px;
         margin: 0 auto;
         padding: 0;
         width: fit-content;
@@ -711,7 +718,7 @@
       .close {
         color: black;
         border: 2px solid;
-        padding: 10px 20px;
+        padding: 5px 15px;
         position: absolute;
         top: 10px;
         right: 25px;
@@ -738,33 +745,39 @@
       /* Next & previous buttons */
       .prev,
       .next {
+
+        border: 2px solid;
         cursor: pointer;
         position: absolute;
-        top: 50%;
+        top: 53%;
         width: auto;
         padding: 16px;
         margin-top: -50px;
         color: black;
         font-weight: bold;
         font-size: 20px;
-        border-radius: 0 3px 3px 0;
         user-select: none;
         -webkit-user-select: none;
       }
 
       .prev {
-        left: -60px;
+        position: fixed;
+        left: 30px;
       }
       
       /* Position the "next button" to the right */
       .next {
-        right: -60px;
+        position: fixed;
+        right: 30px;
       }
       
       /* On hover, add a black background color with a little bit see-through */
       .prev:hover,
       .next:hover {
-        background-color: rgba(0, 0, 0, 0.8);
+        color: black;
+        border: 2px solid;
+        background-color: honeydew;
+
       }
 
       .prev.dark, .next.dark {
@@ -804,13 +817,22 @@
       }
 
       .modal-vertical {
+        text-align: left;
         width:530px; 
         height: 670px;
+        position: relative;
+        bottom: 30px;
       }
 
       .modal-horizontal {
+        text-align: left;
         width: 670px;
         height: 560px;
+      }
+
+      .my-slides-container {
+        display: flex;
+        justify-content: center;
       }
 
 
