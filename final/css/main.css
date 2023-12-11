@@ -127,6 +127,7 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
+      align-content: center;
       position: relative;
       bottom: 5px;
     }
@@ -190,6 +191,14 @@
         right: 40px;
       }
 
+      .decorative-top, .decorative-bottom {
+     position: absolute;
+      }
+
+      .decorative img:hover {
+        border: none;
+      }
+
 
     .description {
         font-size: 1.2rem;
@@ -238,7 +247,7 @@
 
 
     h1 {
-        font-size: 2.8rem;
+        font-size: 2.5rem;
         margin: 50px 20px 20px 20px;
         line-height: 1.25;
     }
@@ -707,7 +716,8 @@
       /* Modal Content */
       .modal-content {
         position: relative;
-        bottom: 40px;
+        display: flex;
+        gap: 10px;
         margin: 0 auto;
         padding: 0;
         width: fit-content;
@@ -826,14 +836,37 @@
 
       .modal-horizontal {
         text-align: left;
-        width: 670px;
+        width: 830px;
         height: 560px;
       }
 
       .my-slides-container {
         display: flex;
         justify-content: center;
+        align-items: center;
+        align-content: center;
+        position: relative;
+        top: 20px;
+
       }
+
+      .modal-figcaption {
+        text-align: left;
+      }
+
+
+      .modal-figcaption-i-vertical {
+      text-align: center;
+      position: relative;
+      bottom: 28px;
+      margin: 0 auto;
+      }
+
+      /* .modal-figcaption-i-horizontal {
+        text-align: center;
+        position: relative;
+        margin: 0 auto;
+        } */
 
 
 
