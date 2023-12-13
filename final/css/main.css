@@ -274,8 +274,6 @@
 
       display: flex;
       margin: 0;
-      position: absolute;
-      top: 0;
   }
 
   .header.dark {
@@ -421,12 +419,9 @@
         align-items: center;
         position: relative;
         left: -10px;
+        top: 15px;
       }
 
-      .leaf-links-ui {
-        position: relative;
-        top: 60px;
-      }
 
 
       .leaf-number {
@@ -442,7 +437,6 @@
         position: fixed;
         display: flex;
         justify-content: center;
-        align-items: center;
         margin: 0;
         border-right: 2px solid;
       }
