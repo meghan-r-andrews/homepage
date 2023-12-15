@@ -172,6 +172,8 @@
       top: 15px;
       gap: 50px;
       right: 25px;
+
+      font-size: .8rem;
     }
 
     .dark {
@@ -369,6 +371,7 @@
 
 
     label {
+      font-size: 
       color: #2c3636;
       
     }
