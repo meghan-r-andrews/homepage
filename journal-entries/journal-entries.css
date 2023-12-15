@@ -16,7 +16,7 @@ text-decoration:underline;
 .entry-container {
     max-width: 955px;
     display: flex;
-    justify-contents: center;
+    justify-content: center;
     flex-direction: column;
 
     margin: 0 auto;
@@ -107,13 +107,13 @@ img {
 
 .screenshots {
     width: 350px;
-    height: 120px;
+    height: fit-content;
     flex-direction: column;
     justify-content: center;
     gap: 10px;
     position: relative;
     left: 10vw;
-    margin-bottom: 15px;
+    margin-bottom: 25px;
 }
 
 .quote {
