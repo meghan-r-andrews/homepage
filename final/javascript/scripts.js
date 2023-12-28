@@ -26,6 +26,7 @@ $( function() {
       $(".close").toggleClass("dark");
       $(".prev").toggleClass("dark");
       $(".next").toggleClass("dark");
+      $("figcaption").toggleClass("dark");
 
     }
   );

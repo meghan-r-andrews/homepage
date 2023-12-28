@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>FINAL - home</title>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <html lang="en">
+            
+        <link rel="stylesheet" href="../css/main.css">
+        <link rel="icon" type="image/png" href="sunflower.png">
+        <link rel="stylesheet" href="https://use.typekit.net/nyd2wxw.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,200&family=Hedvig+Letters+Sans&family=Kumar+One&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lora&display=swap">
+
+
+    </head>
+    
+    <body>
+
+        <h1>Pretty plants that are native to central Virginia </h1>
+        <p> (I did not take these pictures) </p>
+        
+        <div class="gallery">
+
+            <div>
+                    <figure>
+                        <img src="" alt="" onclick="openModal();currentSlide(1)">
+                            <figcaption>
+                            </ficaption>
+                    </figure>   
+            </div>
+
+        
+
+
+
+            <!-- <figure>
+                <img src="" alt="">
+                    <figcaption>
+                    </ficaption>
+            </figure> -->
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- modal/lightbox-->
+
+<div id="myModal" class="modal">
+
+    <span class="close cursor" onclick="closeModal()">&times;</span>
+    <div class="modal-content">
+
+    <!-- <div class="mySlides">
+        <img src="" alt="">
+        <figcaption class="caption-container"></figcaption>
+    </div> -->
+
+    
+    
+
+    <!-- Next/previous controls -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <!-- Caption text -->
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+
+</div>
+
+        <script src="../javascript/jquery-3.7.1.min.js"></script>
+        <script src="../javascript/jquery-ui.min.js"></script>
+        <script src="../javascript/scripts.js"></script>
+
+
+          <script>
+            // Open the Modal
+            function openModal() {
+              document.getElementById("myModal").style.display = "block";
+            }
+            
+            // Close the Modal
+            function closeModal() {
+              document.getElementById("myModal").style.display = "none";
+            }
+            
+            var slideIndex = 1;
+            showSlides(slideIndex);
+            
+            // Next/previous controls
+            function plusSlides(n) {
+              showSlides(slideIndex += n);
+            }
+            
+            // Thumbnail image controls
+            function currentSlide(n) {
+              showSlides(slideIndex = n);
+            }
+            
+            function showSlides(n) {
+              var i;
+              var slides = document.getElementsByClassName("mySlides");
+              var dots = document.getElementsByClassName("demo");
+              var captionText = document.getElementById("caption");
+              if (n > slides.length) {slideIndex = 1}
+              if (n < 1) {slideIndex = slides.length}
+              for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+              }
+              for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex-1].style.display = "block";
+              dots[slideIndex-1].className += " active";
+              captionText.innerHTML = dots[slideIndex-1].alt;
+            }
+            </script>
+
+    </body>
+</html>
+
+    </body>
+</html>
