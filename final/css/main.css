@@ -714,6 +714,12 @@
       .modal-vertical {
         width: 30vw;
         height: auto;
+        position: relative;
+      }
+
+      .modal-vertical-positioning {
+        position: relative;
+        bottom: 45px;
       }
  
       /* Hide the slides by default */
