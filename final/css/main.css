@@ -543,14 +543,14 @@
     } 
 
     .tiny-horizontal {
-      width: 1.25%;
+      width: 20px;
       height: auto;
       border: 1px solid #f0e4e2;
  
     }
 
     .tiny-vertical {
-      width: 1.25%;
+      width: 20px;
       height: auto;
       border: 1px solid #f0e4e2;
     }
