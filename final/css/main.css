@@ -444,6 +444,10 @@
       padding: 20px;
       top: 0;
     }
+
+    .mobile-description {
+      width: 85vw;
+    }
       
       .native, .invasive {
           display: flex;
