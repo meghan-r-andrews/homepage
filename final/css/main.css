@@ -96,6 +96,8 @@
     }
 
 
+
+
     #close-button {
         position: absolute;
         top: 5px;
@@ -154,11 +156,6 @@
         padding-right: 15px;
       }
 
-    .description {
-        font-size: 1.2rem;
-        margin: 0 20px 20px 20px;
-        line-height: 1.5;
-    }
 
     .draggable {
         cursor: grab;
@@ -265,7 +262,7 @@
         width: 40px;
         height: 35px;
         position: relative;
-        top: 10px;
+        top: 8px;
         left: 2px;
         margin-right: 3px;
         background-color: none;
@@ -388,9 +385,14 @@
         position: absolute;
         top: 5px;
         left: 5px;
-      }    
+      }  
 
-    li a:hover {
+      li {
+        padding: 15px;
+        padding-left: 60px;
+      }
+      
+      li a:hover {
         background-color: #da5237;
         border: 2px solid #2c3636; 
         padding: 15px;
@@ -406,6 +408,20 @@
         height: fit-content;
     }
 
+    .location-hover a:hover {
+      background-color: #da5237;
+      border: 2px solid #2c3636; 
+      padding: 15px;
+      border-radius: 15px;
+  }
+
+    .locations {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      gap: 50px;
+    }
+
     .main-container {
         width: 100%;
         height: 100%;
@@ -419,6 +435,15 @@
       padding: 20px;
 
     }
+    .mobile {
+      height: 100vh;
+      width: 100vw;
+      background-color: white;
+      color: black;
+      display: none;
+      padding: 20px;
+      top: 0;
+    }
       
       .native, .invasive {
           display: flex;
@@ -426,6 +451,12 @@
           padding: 0 15px;
           position: relative;
           top: 2px;
+      }
+
+      p {
+        font-size: 1.2rem;
+        margin: 0 20px 20px 20px;
+        line-height: 1.5;
       }
 
       .pic-w-icon {
@@ -494,6 +525,7 @@
         background-color: white;
         color: #2c3636;
       }
+    
       
       .switch-link {
         display: flex;
@@ -540,6 +572,7 @@
         align-items: center;
         align-content: center;
         padding-bottom: 50px;
+        padding-top: 30px;
     } 
 
     .tiny-horizontal {
@@ -556,12 +589,17 @@
     }
 
     .tiny-images-container {
-      position: relative;
-      top: 5px;
+      border-top: 2px solid;
+      padding-top: 20px;
+      width: 100%;
+      /* position: relative;
+      top: 5px; */
       display: flex;
       flex-wrap: wrap;
       gap: 125px;
       justify-content: space-evenly;
+      position: fixed;
+      bottom: 20px;
  
     }
     
@@ -602,6 +640,8 @@
         list-style-type: none;
         margin: 0;
         padding: 0;
+        display: flex;
+        flex-direction: row;
       }
       
       .vertical {
@@ -795,11 +835,59 @@
    /* ----------------------------------------------------------------  */
 
 
-    @media screen and (max-width:375px) {
+    @media screen and (max-width:428px) {
 
-          .back2 {
-            border-bottom: none;
+      .mobile {
+        display: block;
+        z-index: 1000;
+        position: fixed;
+      }
+
+      .contact {
+        width: 100vw;
+      }
+
+
+          .description {
+            left: 15px;
           }
+
+          .header {
+            width: 100vw;
+            height: fit-content;
+            flex-wrap: wrap;
+            display: none;
+          }
+
+          .locations {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            bottom: 20px;
+          }
+
+          .modal-content {
+            height: 100vh;
+          }
+
+          .modal-vertical {
+            width: 250px;
+            position: fixed;
+            top: 100px;
+            right: 80px;
+          }
+
+          .modal-horizontal {
+            width: 325px;
+            position: relative;
+            left: 5px;
+          }
+
+
+          .tiny-images-container {
+            display: none;
+          }
+
         
       }
 
@@ -807,14 +895,15 @@
         .back2 {
           border-bottom: none;
         }
+
+        .tiny-images-container {
+          display: none;
+        }
       }
 
 
     @media screen and (max-width:667px) {
 
-      .back2 {
-        border-bottom: none;
-      }
 
         .contact {
             border: 0 2px solid;
@@ -882,13 +971,15 @@
             bottom: 40px;
         }
 
+        .tiny-images-container {
+          display: none;
+        }
+
 }
 
 
 @media screen and (max-width: 900px) {
-  .back2 {
-    border-bottom: 2px solid;
-  }
+
 
   .contact {
     border: 2px solid;

@@ -16,10 +16,13 @@
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lora&display=swap">
 
     </head>
-
+    
     <body>
 
-        <div class="header">
+       
+
+
+            <div class="header">
 
             <div class="header-content">
 
@@ -50,6 +53,15 @@
                 </div> <!-- header-content -->
 
             </div> <!--header-->
+
+            <div class="mobile">
+                <p> Site not yet ready for mobile viewing :(. <br><br>
+                    Please visit <i> https://andrewsmr2.github.io/homepage/final/html/index.html </i> <br> 
+                    on a desktop/laptop for the time being! <br><br>
+                </p>
+
+                <img src="../pics/tree-frog.jpg" alt="Frog perched on an orange flower" style="width: 330px; height: 250px;">
+            </div> <!-- mobile -->
             
             <div class="leaf-link-container">
 
@@ -110,71 +122,101 @@
                     <h1> <b>This is a website about plants</b> <br> 
                     </h1>
 
-                    <div class="description">
-                        <p>Here are some plants that I encountered. <br> 
+         
+                        <p class="description" style="position: relative; top: 25px;">Here are some plants that I encountered. <br> 
                         I'm learning how to identify them. <br> <br>
                         </p>
 
-                        <ul>
-                            <li>
-                                <p> *Plants seen in/near: <a href="../html/richmond/richmond-identified.html">Richmond, Virginia</a>
-                                </p>
-                            </li>
-                        </ul>
+      
+                        <p style="position: relative; top: 30px; font-size: 1.4rem;"> <b> *Plants seen in/near: </b> </p>
+
+                            <div style="position: relative; top: 50px;">
+                                <ul class="locations">
+                                    <li>
+                                    <a class="location-hover" href="../html/richmond/richmond-identified.html">Richmond, Virginia</a> </li>
+
+                                    <li>
+                                    <a class="location-hover" href="../html/va-beach/vabeach-identified.html">Virginia Beach, Virginia</a></li>
+                                        
+                                    <li>
+                                    <a class="location-hover" href="../html/eastern-shore/easternshore-identified.html">The Eastern Shore, Virginia</a></li>
+
+                                    <li>
+                                    <a class="location-hover" href="../html/asheville/asheville-identified.html">Asheville, North Carolina</a></li>
+
+                                </ul>
+                            </div> <!-- locations -->
+    
+                
+
+                <!-- <div class="contact-container">
+             
+                    <div class="contact">
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSd48nbWchb9fCH46EupqrusnGliRvGRZzjfTNwJOtoCYPeLAw/viewform?usp=pp_url" target="blank" rel="noopener noreferrer">Help me identify / 
+                            Submit a correction </a>
                     </div>
 
-                    <div class="tiny-images-container">
+                </div>
+                 -->
 
-                        <img class="tiny-vertical img-container" src="../pics/tiny-pics/01.jpg" alt="Goldenrod stands tall in front of water." onclick="openModal();currentSlide(1)">
-
-                        <img class="tiny-vertical img-container" src="../pics/tiny-pics/02.jpg" alt="Juniper tree in a cemetery." onclick="openModal();currentSlide(2)">
-
-                        <img class="tiny-vertical img-container" src="../pics/tiny-pics/03.jpg" alt="Small, young sassafras tree with bright yellow leaves." onclick="openModal();currentSlide(3)">
-
-                        <img class="tiny-vertical img-container" src="../pics/tiny-pics/04.jpg" alt="Close-up shot of a camelia." onclick="openModal();currentSlide(4)">
-
-                        <img class="tiny-vertical img-container" src="../pics/tiny-pics/05.jpg" alt="Pine tree in a natural area." onclick="openModal();currentSlide(5)">
-
-                        <img class="tiny-vertical img-container" src="../pics/tiny-pics/06.jpg" alt="A willow tree stands in front of a home on a street corner." onclick="openModal();currentSlide(6)">
-
-                        <img class="tiny-vertical img-container" src="../pics/tiny-pics/07.jpg" alt="A plot of orange cosmos grow in between a sidewalk and street curb." onclick="openModal();currentSlide(7)">
-
-                        <img class="tiny-vertical img-container" src="../pics/tiny-pics/08.jpg" alt="A curved, left-leaning Juniper tree." onclick="openModal();currentSlide(8)">
-
-                        <img class="tiny-vertical img-container" src="../pics/tiny-pics/09.jpg" alt="A pine tree with many thin, bare vines hanging from branches." onclick="openModal();currentSlide(9)">
-
-                        <img class="tiny-vertical img-container" src="../pics/tiny-pics/10.jpg" alt="A yellow and black bug rests on a tulip tree leaf." onclick="openModal();currentSlide(10)">
-
-                        <img class="tiny-vertical img-container" src="../pics/tiny-pics/11.jpg" alt="Silk tree branches shot from below." onclick="openModal();currentSlide(11)">
-
-                        <img class="tiny-vertical img-container" src="../pics/tiny-pics/12.jpg" alt="A pine tree stands in front of several other trees." onclick="openModal();currentSlide(12)">
-
-                        <img class="tiny-vertical img-container" src="../pics/tiny-pics/13.jpg" alt="A small juniper tree grows through a drain." onclick="openModal();currentSlide(13)">
-
-                        <img class="tiny-vertical img-container" src="../pics/tiny-pics/14.jpg" alt="Close up shot of american beautyberry." onclick="openModal();currentSlide(14)">
-
-                        <img class="tiny-vertical img-container" src="../pics/tiny-pics/15.jpg" alt="Close up shot of tree bark that resembles camouflage in cool, green/grey tones." onclick="openModal();currentSlide(15)">
-                        
-                        <img class="tiny-vertical img-container" src="../pics/tiny-pics/16.jpg" alt="A tree with bright red, autumn leaves grows amongst green foliage." onclick="openModal();currentSlide(16)">
-
-                        <img class="tiny-vertical img-container" src="../pics/tiny-pics/17.jpg" alt="Sweetgum tree branches with red leaves during the autumn." onclick="openModal();currentSlide(17)">
-
-                        <img class="tiny-vertical img-container" src="../pics/tiny-pics/18.jpg" alt="Tree branches with yellow/green and brown leaves." onclick="openModal();currentSlide(18)">
-
-                        <img class="tiny-vertical img-container" src="../pics/tiny-pics/19.jpg" alt="Some type of vine resembling twisted, entangled tree branches growing in a wooded area." onclick="openModal();currentSlide(19)">
-
-                        <img class="tiny-vertical img-container" src="../pics/tiny-pics/20.jpg" alt="Large, overgrown lantanas plants grow next to a house, spilling out onto the sidewalk." onclick="openModal();currentSlide(20)">
-
-                        <img class="tiny-vertical img-container" src="../pics/tiny-pics/21.jpg" alt="Tree during autumn with bright red leaves." onclick="openModal();currentSlide(21)">
-
-                        <img class="tiny-vertical img-container" src="../pics/tiny-pics/22.jpg" alt="Sweetgum tree branches with leaves that are changing colors during the autumn." onclick="openModal();currentSlide(22)">
-
-                        <img class="tiny-vertical img-container" src="../pics/tiny-pics/23.jpg" alt="Autumn tree with bright yellow and red leaves grows amongst green foliage." onclick="openModal();currentSlide(23)">
-
-                        <img class="tiny-vertical img-container" src="../pics/tiny-pics/24.jpg" alt="A bee rests on a goldenrod flower." onclick="openModal();currentSlide(24)">
+            </div> <!--thisisawebsite-->
+        </div> <!--text-container?-->
 
 
-                    </div> <!-- tiny images container-->
+            <div class="tiny-images-container">
+
+
+
+                <img class="tiny-vertical img-container" src="../pics/tiny-pics/01.jpg" alt="Goldenrod stands tall in front of water." onclick="openModal();currentSlide(1)">
+
+                <!-- <img class="tiny tiny-vertical img-container draggable" src="../pics/tiny-pics/02.jpg" alt="Juniper tree in a cemetery." onclick="openModal();currentSlide(2)">
+
+                <img class="tiny tiny-vertical img-container draggable" src="../pics/tiny-pics/03.jpg" alt="Small, young sassafras tree with bright yellow leaves." onclick="openModal();currentSlide(3)">
+
+                <img class="tiny tiny-vertical img-container draggable" src="../pics/tiny-pics/04.jpg" alt="Close-up shot of a camelia." onclick="openModal();currentSlide(4)">
+
+                <img class="tiny tiny-horizontal img-container" src="../pics/tiny-pics/05.jpg" alt="Pine tree in a natural area." onclick="openModal();currentSlide(5)">
+
+                <img class="tiny tiny-horizontal img-container draggable" src="../pics/tiny-pics/06.jpg" alt="A willow tree stands in front of a home on a street corner." onclick="openModal();currentSlide(6)"> -->
+
+                <img class="tiny tiny-vertical img-container draggable" src="../pics/tiny-pics/07.jpg" alt="A plot of orange cosmos grow in between a sidewalk and street curb." onclick="openModal();currentSlide(2)">
+
+                <!-- <img class="tiny tiny-vertical img-container draggable" src="../pics/tiny-pics/08.jpg" alt="A curved, left-leaning Juniper tree." onclick="openModal();currentSlide(8)"> -->
+
+                <img class="tiny tiny-vertical img-container draggable" src="../pics/tiny-pics/09.jpg" alt="A pine tree with many thin, bare vines hanging from branches." onclick="openModal();currentSlide(3)">
+
+                <!-- <img class="tiny tiny-vertical img-container draggable" src="../pics/tiny-pics/10.jpg" alt="A yellow and black bug rests on a tulip tree leaf." onclick="openModal();currentSlide(10)">
+
+                <img class="tiny tiny-vertical img-container draggable" src="../pics/tiny-pics/11.jpg" alt="Silk tree branches shot from below." onclick="openModal();currentSlide(11)"> -->
+
+                <img class="tiny tiny-horizontal img-container draggable" src="../pics/tiny-pics/12.jpg" alt="A pine tree stands in front of several other trees." onclick="openModal();currentSlide(4)">
+
+                <img class="tiny tiny-horizontal draggable" src="../pics/tiny-pics/13.jpg" alt="A small juniper tree grows through a drain." onclick="openModal();currentSlide(5)">
+
+                <!-- <img class="tiny tiny-vertical img-container draggable" src="../pics/tiny-pics/14.jpg" alt="Close up shot of american beautyberry." onclick="openModal();currentSlide(14)"> -->
+
+                <img class="tiny tiny-horizontal img-container draggable" src="../pics/tiny-pics/15.jpg" alt="Close up shot of tree bark that resembles camouflage in cool, green/grey tones." onclick="openModal();currentSlide(6)">
+
+                <img class="tiny tiny-horizontal img-container draggable" src="../pics/tiny-pics/16.jpg" alt="A tree with bright red, autumn leaves grows amongst green foliage." onclick="openModal();currentSlide(7)">
+
+                <!-- <img class="tiny tiny-horizontal img-container draggable" src="../pics/tiny-pics/17.jpg" alt="Sweetgum tree branches with red leaves during the autumn." onclick="openModal();currentSlide(17)"> -->
+
+                <img class="tiny tiny-horizontal img-container draggable" src="../pics/tiny-pics/18.jpg" alt="Tree branches with yellow/green and brown leaves." onclick="openModal();currentSlide(8)">
+
+                <img class="tiny tiny-vertical img-container draggable" src="../pics/tiny-pics/19.jpg" alt="Some type of vine resembling twisted, entangled tree branches growing in a wooded area." onclick="openModal();currentSlide(9)">
+
+                <img class="tiny tiny-vertical img-container draggable" src="../pics/tiny-pics/20.jpg" alt="Large, overgrown lantanas plants grow next to a house, spilling out onto the sidewalk." onclick="openModal();currentSlide(10)">
+
+                <!-- <img class="tiny tiny-vertical img-container draggable" src="../pics/tiny-pics/21.jpg" alt="Tree during autumn with bright red leaves." onclick="openModal();currentSlide(21)">
+
+                <img class="tiny tiny-vertical img-container draggable" src="../pics/tiny-pics/22.jpg" alt="Sweetgum tree branches with leaves that are changing colors during the autumn." onclick="openModal();currentSlide(22)"> -->
+
+                <img class="tiny tiny-horizontal img-container draggable" src="../pics/tiny-pics/23.jpg" alt="Autumn tree with bright yellow and red leaves grows amongst green foliage." onclick="openModal();currentSlide(11)">
+
+                <img class="tiny tiny-horizontal img-container draggable" src="../pics/tiny-pics/24.jpg" alt="A bee rests on a goldenrod flower." onclick="openModal();currentSlide(12)">
+
+
+            </div> <!-- tiny images container -->
 
    
 
@@ -190,7 +232,7 @@
       <figcaption class="caption-container"></figcaption>
     </div>
 
-    <div class="mySlides">
+    <!-- <div class="mySlides">
         <img class="modal-vertical" src="../pics/tiny-pics/02.jpg" alt="Juniper tree in a cemetery." style="height: 80vh; position: relative; top: 5px;">
         <figcaption class="caption-container"></figcaption>
     </div>
@@ -213,24 +255,24 @@
     <div class="mySlides">
         <img class="modal-horizontal" src="../pics/tiny-pics/06.jpg" alt="A willow tree stands in front of a home on a street corner." style="position: relative; top:40px;">
         <figcaption class="caption-container"></figcaption>
-    </div>
+    </div> -->
 
     <div class="mySlides">
         <img class="modal-vertical" src="../pics/tiny-pics/07.jpg" alt="A plot of orange cosmos grow in between a sidewalk and street curb." style="height: 80vh; position: relative; top: 5px;">
         <figcaption class="caption-container"></figcaption>
     </div>
 
-    <div class="mySlides">
+    <!-- <div class="mySlides">
         <img class="modal-vertical" src="../pics/tiny-pics/08.jpg" alt="A curved, left-leaning Juniper tree." style="height: 80vh; position: relative; top: 5px;">
         <figcaption class="caption-container"></figcaption>
-    </div>
+    </div> -->
 
     <div class="mySlides">
         <img class="modal-vertical" src="../pics/tiny-pics/09.jpg" alt="A yellow and black bug rests on a tulip tree leaf." style="position: relative; top: 10px;">
         <figcaption class="caption-container"></figcaption>
     </div>
 
-    <div class="mySlides">
+    <!-- <div class="mySlides">
         <img class="modal-horizontal" src="../pics/tiny-pics/10.jpg" alt="A yellow and black bug rests on a tulip tree leaf." style="position: relative; top: 40px;">
         <figcaption class="caption-container"></figcaption>
     </div>
@@ -238,7 +280,7 @@
     <div class="mySlides">
         <img class="modal-horizontal" src="../pics/tiny-pics/11.jpg" alt="Silk tree branches shot from below." style="position: relative; top: 40px;">
         <figcaption class="caption-container"></figcaption>
-    </div>
+    </div> -->
 
     <div class="mySlides">
         <img class="modal-horizontal" src="../pics/tiny-pics/12.jpg" alt="." style="position: relative; top: 5px;">
@@ -250,10 +292,10 @@
         <figcaption class="caption-container"></figcaption>
     </div>
 
-    <div class="mySlides">
+    <!-- <div class="mySlides">
         <img class="modal-horizontal" src="../pics/tiny-pics/14.jpg" alt="Close up shot of american beautyberry." style="position: relative; top: 40px;">
         <figcaption class="caption-container"></figcaption>
-    </div>
+    </div> -->
 
     <div class="mySlides">
         <img class="modal-vertical" src="../pics/tiny-pics/15.jpg" alt="Close up shot of tree bark that resembles camouflage in cool, green/grey tones." style="position: relative; top: 10px;">
@@ -265,10 +307,10 @@
         <figcaption class="caption-container"></figcaption>
     </div>
 
-    <div class="mySlides">
+    <!-- <div class="mySlides">
         <img class="modal-horizontal" src="../pics/tiny-pics/17.jpg" alt="Sweetgum tree branches with red leaves during the autumn." style="position: relative; top: 40px;">
         <figcaption class="caption-container"></figcaption>
-    </div>
+    </div> -->
 
     <div class="mySlides">
         <img class="modal-horizontal" src="../pics/tiny-pics/18.jpg" alt="Tree branches with yellow/green and brown leaves." style="position: relative; top: 40px;">
@@ -285,7 +327,7 @@
         <figcaption class="caption-container"></figcaption>
     </div>
 
-    <div class="mySlides">
+    <!-- <div class="mySlides">
         <img class="modal-horizontal" src="../pics/tiny-pics/21.jpg" alt="Tree during autumn with bright red leaves." style="position: relative; top: 40px;">
         <figcaption class="caption-container"></figcaption>
     </div>
@@ -293,7 +335,7 @@
     <div class="mySlides">
         <img class="modal-horizontal" src="../pics/tiny-pics/22.jpg" alt="Sweetgum tree branches with leaves that are changing colors during the autumn." style="position: relative; top: 40px;">
         <figcaption class="caption-container"></figcaption>
-    </div>
+    </div> -->
 
     <div class="mySlides">
         <img class="modal-vertical" src="../pics/tiny-pics/23.jpg" alt="." style="position: relative; top: 15px;">

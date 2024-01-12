@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Plants - Virginia Beach, VA</title>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <html lang="en">
+            
+        <link rel="stylesheet" href="../../css/main.css">
+        <link rel="icon" type="image/png" href="sunflower.png">
+        <link rel="stylesheet" href="https://use.typekit.net/nyd2wxw.css">
+
+    </head>
+    
+    <body>
+
+      <div class="mobile">
+        <p> Site not yet ready for mobile viewing :(. <br><br>
+            Please visit <i> https://andrewsmr2.github.io/homepage/final/html/index.html </i> <br> 
+            on a desktop/laptop for the time being! <br><br>
+        </p>
+
+        <img src="../pics/tree-frog.jpg" alt="Frog perched on an orange flower" style="width: 330px; height: 250px;">
+
+        <p> <a href="https://www.freepik.com/free-photo/australian-white-tree-frog-sitting-flower_17721898.htm">Image by kuritafsheen77</a> on Freepik
+        </p>  
+        
+    </div> <!-- mobile -->
+
+       
+            <div class="header">
+
+              <div class="header-left-side">
+
+              <a class= "back2" href="../index.html">Home</a>
+
+              <div class="contact">
+  
+                  <a class="contact-link" href="https://docs.google.com/forms/d/e/1FAIpQLSd48nbWchb9fCH46EupqrusnGliRvGRZzjfTNwJOtoCYPeLAw/viewform?usp=pp_url" target="blank" rel="noopener noreferrer">.-* Help me identify / 
+                  Submit a correction *-.</a>
+  
+                  </div>
+
+                </div> <!-- header-left-side -->
+                <div class="customize">
+
+                    <div class="font-selector">
+                        <label for="font-selector">Select font-type:</label><br>
+                         <select class="select-font-button" id="font-selector" autocomplete="off">
+                            <option selected="selected" value="sans-serif">sans serif</option>
+                            <option value="serif">serif</option>
+                            <option value="open-dyslexic">open dyslexic</option>
+                        </select>
+                    </div>
+
+                    <div class="dark-button">
+                        <button>toggle dark mode</button>
+                     </div>
+
+                </div> <!-- customize -->
+
+            </div> <!-- header -->
+
+<div class="plants-seen-in">
+      <h1>Plants seen in/near Virginia Beach, Virginia<br> 
+        </h1>
+
+      </div>
+
+                    
+    <div class="link-container">
+        <div class="switch-link">
+            <a href="../../html/va-beach/vabeach-identified.html">Identified</a>
+        </div>
+        
+        <div class="current-selected">
+            <h2>Unidentified</h2>
+        </div>
+    </div>
+
+
+    <div class="gallery">
+
+      <!-- <figure>
+          <div class="ui-number">#</div>
+          <img class="" src="" alt="" onclick="openModal();currentSlide(#)">
+              <figcaption class="figcaption-ui">
+              </figcaption>
+      </figure> -->
+
+
+      <!-- <figure class="ui-img-caption-container-horizontal">
+        <div class="ui-number">1.</div>
+          <img class="img-container" src="" alt="" onclick="openModal();currentSlide(1)">
+              <figcaption class="figcaption-ui">
+              </figcaption>
+      </figure> -->
+
+      <!-- <figure>
+          <div class="ui-number">#</div>
+          <img class="" src="" alt="" onclick="openModal();currentSlide(#)">
+              <figcaption class="figcaption-ui">
+              </figcaption>
+      </figure> -->
+
+</div>
+    </div>
+
+</div>
+</div>
+
+<!-- modal/lightbox-->
+
+<div id="myModal" class="modal">
+
+
+    <span class="close cursor" onclick="closeModal()">&times;</span>
+    <div class="modal-content">
+
+      <!-- <div class="my-slides-container"> -->
+
+
+    <div class="mySlides">
+      <div class="my-slides-container modal-horizontal" style="">
+        <div class="ui-number-modal">1.</div>
+        <img class="modal-horizontal" src="" alt=".">
+
+          <figcaption class="modal-figcaption">
+          </figcaption>
+        </div>
+    </div>
+
+
+    
+
+    <!-- Next/previous controls -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <!-- Caption text -->
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+
+</div>
+</div>
+
+    
+
+    <script src="../../javascript/jquery-3.7.1.min.js"></script>
+
+    <script src="../../javascript/jquery-ui.min.js"></script>
+
+    <script src="../../javascript/scripts.js"></script>
+
+
+    <script>
+        // Get the elements by their ID
+        var popupLink = document.getElementById("popup-link");
+        var popupWindow = document.getElementById("popup-window");
+        var closeButton = document.getElementById("close-button");
+
+        // Show the pop-up window when the link is clicked
+        popupLink.addEventListener("click", function(event) {
+          event.preventDefault();
+          popupWindow.style.display = "block";
+        });
+
+        // Hide the pop-up window when the close button is clicked
+        closeButton.addEventListener("click", function() {
+          popupWindow.style.display = "none";
+        });
+
+      </script>  
+
+<script>
+    // Open the Modal
+    function openModal() {
+      document.getElementById("myModal").style.display = "block";
+    }
+    
+    // Close the Modal
+    function closeModal() {
+      document.getElementById("myModal").style.display = "none";
+    }
+    
+    var slideIndex = 1;
+    showSlides(slideIndex);
+    
+    // Next/previous controls
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    
+    // Thumbnail image controls
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("demo");
+      var captionText = document.getElementById("caption");
+      if (n > slides.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";
+      dots[slideIndex-1].className += " active";
+      captionText.innerHTML = dots[slideIndex-1].alt;
+    }
+    </script>
+
+
+</body>
+</html>
