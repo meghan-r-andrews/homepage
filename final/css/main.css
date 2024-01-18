@@ -422,6 +422,10 @@
       gap: 50px;
     }
 
+    .locations.open-dyslexic {
+      gap: 40px;
+    }
+
     .main-container {
         width: 100%;
         height: 100%;
