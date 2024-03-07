@@ -1004,11 +1004,18 @@ img.hover-shadow {
         border-bottom: none;
       }
 
+      .mobile {
+        display: block;
+        z-index: 1000;
+        position: fixed;
+      }
+
     .tiny-images-container {
         display: none;
       }
 
   }
+
 
 
 /* ----------------------------------------------------------------  */
@@ -1074,6 +1081,12 @@ img.hover-shadow {
       flex-direction: column;
     }
 
+    .mobile {
+      display: block;
+      z-index: 1000;
+      position: fixed;
+    }
+
     .mobile-disappear {
         display: none;
       }
@@ -1097,12 +1110,39 @@ img.hover-shadow {
 /* ----------------------------------------------------------------  */
 
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 810px) {
 
     .contact {
         border: 2px solid;
       }
+
+      .mobile {
+        display: block;
+        z-index: 1000;
+        position: fixed;
+      }
   
+}
+
+/* ----------------------------------------------------------------  */
+
+
+@media screen and (max-width: 968px) {
+
+  .contact {
+     font-size: 1rem;
+    }
+
+    .customize {
+      position: relative;
+      top: 2px;
+    }
+
+
+label {
+  display: none;
+}
+
 }
 
 
@@ -1111,9 +1151,12 @@ img.hover-shadow {
 
 @media screen and (max-width:1045px) {
 
-    .customize {
+    
+  .customize {
         height: 100%;
         padding: 10px;
+        position: relative;
+        top: 2px;
       }
 
     .font-selector {
@@ -1125,6 +1168,13 @@ img.hover-shadow {
         position: relative;
         left: 10px;
       }
+
+      label {
+        display: none;
+      }
+
+    
+
 
   }
 
