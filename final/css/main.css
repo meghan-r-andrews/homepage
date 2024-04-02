@@ -10,6 +10,14 @@
     font-style: normal;
   }
 
+  @font-face {
+    font-family: 'comic sans';
+    src: url('../comicsans-webfont.woff2') format('woff2'),
+        url('../comicsans-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    }
+
 
 a {
     font-size: 1.1rem;
@@ -75,6 +83,10 @@ body {
     display: flex;
     justify-content: space-between;
     /* align-content: first baseline; */
+  }
+
+  body.comic-sans {
+    font-family: 'comic sans';
   }
 
 body.open-dyslexic {
@@ -771,7 +783,7 @@ ul {
 /* Caption text */
 .caption-container {
     text-align: center;
-    padding-top: 10px;
+  
   }
 
 /* The Close Button */
